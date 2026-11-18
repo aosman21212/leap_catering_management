@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_catering_order_history_wizard_form" model="ir.ui.view">
+        <field name="name">catering.order.history.wizard.form</field>
+        <field name="model">catering.order.history.wizard</field>
+        <field name="arch" type="xml">
+            <form>
+                <group>
+                    <field name="date_from"/>
+                    <field name="date_to"/>
+                    <field name="partner_id"/>
+                </group>
+                <footer>
+                    <button name="button_print" type="object" string="Print" class="btn-primary"/>
+                    <button string="Discard" class="btn-secondary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_catering_order_history_wizard" model="ir.actions.act_window">
+        <field name="name">Print Order History</field>
+        <field name="res_model">catering.order.history.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+</odoo>

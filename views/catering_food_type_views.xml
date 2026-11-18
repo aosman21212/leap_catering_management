@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_catering_food_type_list" model="ir.ui.view">
+        <field name="name">catering.food.type.list</field>
+        <field name="model">catering.food.type</field>
+        <field name="arch" type="xml">
+            <list editable="bottom">
+                <field name="sequence" widget="handle"/>
+                <field name="name"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="action_catering_food_type" model="ir.actions.act_window">
+        <field name="name">Food Types</field>
+        <field name="res_model">catering.food.type</field>
+        <field name="view_mode">list,form</field>
+    </record>
+</odoo>

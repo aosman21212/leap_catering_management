@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- App root: the three top-bar tabs (Dashboard / CRM / Catering) are its direct children -->
+    <menuitem id="menu_catering_root" name="Catering Management" sequence="85"
+              web_icon="leap_catering_management,static/description/icon.png"
+              groups="leap_catering_management.group_catering_user"/>
+
+    <menuitem id="menu_catering_dashboard" name="Dashboard" parent="menu_catering_root"
+              action="action_catering_order_analysis" sequence="10"
+              groups="leap_catering_management.group_catering_manager"/>
+
+    <menuitem id="menu_catering_crm" name="CRM" parent="menu_catering_root"
+              action="crm.crm_lead_action_pipeline" sequence="20"/>
+
+    <menuitem id="menu_catering_tab" name="Catering" parent="menu_catering_root" sequence="30"/>
+
+    <!-- Catering tab -->
+    <menuitem id="menu_catering_order" name="Orders" parent="menu_catering_tab" action="action_catering_order" sequence="10"/>
+    <menuitem id="menu_catering_customer" name="Customer" parent="menu_catering_tab" action="action_catering_customer" sequence="20"/>
+    <menuitem id="menu_catering_meal_package" name="Meal Package" parent="menu_catering_tab" action="action_catering_meal_package" sequence="30"/>
+
+    <menuitem id="menu_catering_food" name="Food" parent="menu_catering_tab" sequence="40"/>
+    <menuitem id="menu_catering_food_type" name="Food Types" parent="menu_catering_food" action="action_catering_food_type" sequence="10"/>
+    <menuitem id="menu_catering_food_item" name="Food Items" parent="menu_catering_food" action="action_catering_food_item" sequence="20"/>
+    <menuitem id="menu_catering_food_photo" name="Food Photo Gallery" parent="menu_catering_food" action="action_catering_food_photo" sequence="30"/>
+
+    <menuitem id="menu_catering_service_charge" name="Additional Items" parent="menu_catering_tab" action="action_catering_service_charge" sequence="50"/>
+    <menuitem id="menu_catering_product" name="Products" parent="menu_catering_tab" action="action_catering_product" sequence="60"/>
+    <menuitem id="menu_catering_staff" name="Staff" parent="menu_catering_tab" action="action_catering_staff" sequence="70"/>
+
+    <menuitem id="menu_catering_reporting" name="Reporting" parent="menu_catering_tab" sequence="80" groups="leap_catering_management.group_catering_manager"/>
+    <menuitem id="menu_catering_invoice" name="Invoices" parent="menu_catering_reporting" action="action_catering_invoice" sequence="10"/>
+    <menuitem id="menu_catering_order_history" name="Print Order History" parent="menu_catering_reporting" action="action_catering_order_history_wizard" sequence="20"/>
+
+    <menuitem id="menu_catering_configuration" name="Configuration" parent="menu_catering_tab" sequence="90" groups="leap_catering_management.group_catering_manager"/>
+    <menuitem id="menu_catering_event_category" name="Event Types" parent="menu_catering_configuration" action="action_catering_event_category" sequence="10"/>
+    <menuitem id="menu_catering_order_tag" name="Order Tags" parent="menu_catering_configuration" action="action_catering_order_tag" sequence="20"/>
+    <menuitem id="menu_catering_terms_template" name="Terms &amp; Conditions Templates" parent="menu_catering_configuration" action="action_catering_terms_template" sequence="30"/>
+    <menuitem id="menu_catering_checklist_template" name="Checklist Templates" parent="menu_catering_configuration" action="action_catering_checklist_template" sequence="40"/>
+</odoo>

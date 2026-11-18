@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="action_report_catering_meal_package" model="ir.actions.report">
+        <field name="name">Meal Package</field>
+        <field name="model">catering.meal.package</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">leap_catering_management.report_catering_meal_package_document</field>
+        <field name="report_file">leap_catering_management.report_catering_meal_package_document</field>
+        <field name="binding_model_id" ref="model_catering_meal_package"/>
+        <field name="binding_type">report</field>
+    </record>
+
+    <template id="report_catering_meal_package_document">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="o">
+                <t t-call="web.external_layout">
+                    <div class="page">
+                        <h2><span t-field="o.name"/></h2>
+                        <p>
+                            <strong>Meal Type:</strong> <span t-field="o.meal_type"/>
+                        </p>
+                        <p t-if="o.description" t-field="o.description"/>
+
+                        <table class="table table-sm o_main_table mt-3">
+                            <thead>
+                                <tr>
+                                    <th>Course</th>
+                                    <th>Food Item</th>
+                                    <th>Note</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr t-foreach="o.line_ids" t-as="line">
+                                    <td><span t-field="line.food_type_id.name"/></td>
+                                    <td><span t-field="line.food_item_id.name"/></td>
+                                    <td><span t-field="line.note"/></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <h4 class="mt-4">Price per Head</h4>
+                        <table class="table table-sm">
+                            <thead>
+                                <tr>
+                                    <th>Min Guests</th>
+                                    <th>Max Guests</th>
+                                    <th class="text-end">Price / Head</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr t-foreach="o.price_tier_ids" t-as="tier">
+                                    <td><span t-field="tier.min_guests"/></td>
+                                    <td><span t-field="tier.max_guests"/></td>
+                                    <td class="text-end">
+                                        <span t-field="tier.price_per_head" t-options="{'widget': 'monetary', 'display_currency': o.currency_id}"/>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+</odoo>

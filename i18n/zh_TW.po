@@ -1,0 +1,1654 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* leap_catering_management
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-18 16:58+0000\n"
+"PO-Revision-Date: 2026-11-18 16:58+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: leap_catering_management
+#. odoo-python
+#: code:addons/leap_catering_management/models/catering_order.py:0
+msgid "%(package)s (%(guests)s guests)"
+msgstr "%(package)s（%(guests)s 位賓客）"
+
+#. module: leap_catering_management
+#: model:ir.actions.report,print_report_name:leap_catering_management.action_report_catering_order
+msgid "'Catering Order - %s' % (object.name)"
+msgstr ""
+
+#. module: leap_catering_management
+#: model:ir.model.fields.selection,name:leap_catering_management.selection__catering_order__rating_value__1
+msgid "1 - Very Dissatisfied"
+msgstr "1 - 非常不滿意"
+
+#. module: leap_catering_management
+#: model:ir.model.fields.selection,name:leap_catering_management.selection__catering_order__rating_value__2
+msgid "2 - Dissatisfied"
+msgstr "2 - 不滿意"
+
+#. module: leap_catering_management
+#: model:ir.model.fields.selection,name:leap_catering_management.selection__catering_order__rating_value__3
+msgid "3 - Neutral"
+msgstr "3 - 普通"
+
+#. module: leap_catering_management
+#: model:ir.model.fields.selection,name:leap_catering_management.selection__catering_order__rating_value__4
+msgid "4 - Satisfied"
+msgstr "4 - 滿意"
+
+#. module: leap_catering_management
+#: model:ir.model.fields.selection,name:leap_catering_management.selection__catering_order__rating_value__5
+msgid "5 - Very Satisfied"
+msgstr "5 - 非常滿意"
+
+#. module: leap_catering_management
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.report_catering_order_document
+msgid ""
+"<br/>\n"
+"                                <strong>Guests:</strong>"
+msgstr ""
+"<br/>\n"
+"                                <strong>賓客：</strong>"
+
+#. module: leap_catering_management
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.report_catering_order_document
+msgid ""
+"<br/>\n"
+"                                <strong>Venue:</strong>"
+msgstr ""
+"<br/>\n"
+"                                <strong>場地：</strong>"
+
+#. module: leap_catering_management
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.portal_catering_order_page
+msgid ""
+"<br/>\n"
+"                        <strong>Guests:</strong>"
+msgstr ""
+"<br/>\n"
+"                        <strong>賓客：</strong>"
+
+#. module: leap_catering_management
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.portal_catering_order_page
+msgid ""
+"<br/>\n"
+"                        <strong>Venue:</strong>"
+msgstr ""
+"<br/>\n"
+"                        <strong>場地：</strong>"
+
+#. module: leap_catering_management
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.portal_catering_order_page
+msgid "<i class=\"fa fa-download me-1\"/>Download PDF"
+msgstr "<i class=\"fa fa-download me-1\"/>下載 PDF"
+
+#. module: leap_catering_management
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.portal_catering_order_page
+msgid ""
+"<select name=\"rating_value\" class=\"form-select\" style=\"max-width: 200px;\" required=\"required\">\n"
+"                                    <option value=\"\">Select a score</option>\n"
+"                                    <option value=\"5\">5 - Very Satisfied</option>\n"
+"                                    <option value=\"4\">4 - Satisfied</option>\n"
+"                                    <option value=\"3\">3 - Neutral</option>\n"
+"                                    <option value=\"2\">2 - Dissatisfied</option>\n"
+"                                    <option value=\"1\">1 - Very Dissatisfied</option>\n"
+"                                </select>"
+msgstr ""
+"<select name=\"rating_value\" class=\"form-select\" style=\"max-width: 200px;\" required=\"required\">\n"
+"                                    <option value=\"\">請選擇分數</option>\n"
+"                                    <option value=\"5\">5 - 非常滿意</option>\n"
+"                                    <option value=\"4\">4 - 滿意</option>\n"
+"                                    <option value=\"3\">3 - 普通</option>\n"
+"                                    <option value=\"2\">2 - 不滿意</option>\n"
+"                                    <option value=\"1\">1 - 非常不滿意</option>\n"
+"                                </select>"
+
+#. module: leap_catering_management
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.report_catering_order_document
+msgid "<strong>Customer</strong>"
+msgstr "<strong>客戶</strong>"
+
+#. module: leap_catering_management
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.portal_catering_order_page
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.report_catering_order_document
+msgid "<strong>Event Date:</strong>"
+msgstr "<strong>活動日期：</strong>"
+
+#. module: leap_catering_management
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.portal_catering_order_page
+msgid "<strong>Event Type:</strong>"
+msgstr "<strong>活動類型：</strong>"
+
+#. module: leap_catering_management
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.report_catering_meal_package_document
+msgid "<strong>Meal Type:</strong>"
+msgstr "<strong>餐點類型：</strong>"
+
+#. module: leap_catering_management
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.portal_catering_order_page
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.report_catering_order_document
+msgid "<strong>Terms &amp; Conditions</strong>"
+msgstr "<strong>條款與細則</strong>"
+
+#. module: leap_catering_management
+#. odoo-python
+#: code:addons/leap_catering_management/models/crm_lead.py:0
+msgid "A catering order has already been generated from this lead."
+msgstr "已從此潛在客戶產生外燴訂單。"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__access_warning
+msgid "Access warning"
+msgstr "存取警告"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__message_needaction
+msgid "Action Needed"
+msgstr "需要採取行動"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_checklist_template__active
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_event_category__active
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_food_item__active
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_food_type__active
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_meal_package__active
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_product__active
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_service_charge__active
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_terms_template__active
+msgid "Active"
+msgstr "啟用"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__activity_ids
+msgid "Activities"
+msgstr "活動"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr "活動異常裝飾"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__activity_state
+msgid "Activity State"
+msgstr "活動狀態"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__activity_type_icon
+msgid "Activity Type Icon"
+msgstr "活動類型圖示"
+
+#. module: leap_catering_management
+#. odoo-python
+#: code:addons/leap_catering_management/models/catering_order.py:0
+msgid "Add at least one meal package or charge before invoicing."
+msgstr "開立發票前，請至少新增一個套餐或一項費用。"
+
+#. module: leap_catering_management
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.view_catering_order_tag_wizard_form
+msgid "Add the selected tags to all the chosen orders."
+msgstr "將所選標籤新增至所有選定的訂單。"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__charge_line_ids
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.report_catering_order_document
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.view_catering_order_form
+msgid "Additional Charges"
+msgstr "額外費用"
+
+#. module: leap_catering_management
+#: model:ir.actions.act_window,name:leap_catering_management.action_catering_service_charge
+#: model:ir.ui.menu,name:leap_catering_management.menu_catering_service_charge
+msgid "Additional Items"
+msgstr ""
+
+#. module: leap_catering_management
+#. odoo-python
+#: code:addons/leap_catering_management/controllers/portal.py:0
+msgid "All"
+msgstr "全部"
+
+#. module: leap_catering_management
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.view_catering_order_tag_wizard_form
+msgid "Apply Tags"
+msgstr "套用標籤"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__staff_ids
+msgid "Assigned Staff"
+msgstr "指派員工"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__message_attachment_count
+msgid "Attachment Count"
+msgstr "附件數量"
+
+#. module: leap_catering_management
+#. odoo-python
+#: code:addons/leap_catering_management/models/catering_order.py:0
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.view_catering_order_form
+msgid "Attachments"
+msgstr "附件"
+
+#. module: leap_catering_management
+#: model:ir.model.fields.selection,name:leap_catering_management.selection__catering_meal_package__meal_type__breakfast
+msgid "Breakfast"
+msgstr "早餐"
+
+#. module: leap_catering_management
+#: model:ir.model.fields.selection,name:leap_catering_management.selection__catering_meal_package__meal_type__brunch
+msgid "Brunch"
+msgstr "早午餐"
+
+#. module: leap_catering_management
+#: model:ir.model.fields.selection,name:leap_catering_management.selection__catering_meal_package__meal_type__buffet
+msgid "Buffet"
+msgstr "自助餐"
+
+#. module: leap_catering_management
+#: model:ir.model,name:leap_catering_management.model_catering_order_tag_wizard
+msgid "Bulk Update Catering Order Tags"
+msgstr "批次更新外燴訂單標籤"
+
+#. module: leap_catering_management
+#: model:ir.ui.menu,name:leap_catering_management.menu_catering_crm
+msgid "CRM"
+msgstr "客戶關係管理"
+
+#. module: leap_catering_management
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.view_catering_order_form
+msgid "Cancel"
+msgstr "取消"
+
+#. module: leap_catering_management
+#: model:ir.model,name:leap_catering_management.model_catering_order_cancel_wizard
+msgid "Cancel Catering Orders"
+msgstr "取消外燴訂單"
+
+#. module: leap_catering_management
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.view_catering_order_cancel_wizard_form
+msgid "Cancel Orders"
+msgstr "取消訂單"
+
+#. module: leap_catering_management
+#: model:ir.actions.act_window,name:leap_catering_management.action_catering_order_cancel_wizard
+msgid "Cancel Selected Orders"
+msgstr "取消所選訂單"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__cancel_reason
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_cancel_wizard__reason
+msgid "Cancellation Reason"
+msgstr "取消原因"
+
+#. module: leap_catering_management
+#: model:ir.model.fields.selection,name:leap_catering_management.selection__catering_order__state__cancelled
+#: model:ir.model.fields.selection,name:leap_catering_management.selection__catering_order_checklist_item__state__cancelled
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.view_catering_order_form
+msgid "Cancelled"
+msgstr "已取消"
+
+#. module: leap_catering_management
+#: model:ir.module.category,name:leap_catering_management.module_category_catering
+#: model:ir.ui.menu,name:leap_catering_management.menu_catering_tab
+#: model:res.groups.privilege,name:leap_catering_management.res_groups_privilege_catering
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.view_crm_lead_form_catering
+msgid "Catering"
+msgstr "外燴"
+
+#. module: leap_catering_management
+#: model:ir.model,name:leap_catering_management.model_catering_service_charge
+msgid "Catering Additional Service Charge"
+msgstr "外燴額外服務費用"
+
+#. module: leap_catering_management
+#: model:ir.model,name:leap_catering_management.model_catering_checklist_template
+msgid "Catering Checklist Template"
+msgstr "外燴檢查清單範本"
+
+#. module: leap_catering_management
+#: model:ir.model,name:leap_catering_management.model_catering_checklist_template_line
+msgid "Catering Checklist Template Line"
+msgstr "外燴檢查清單範本項目"
+
+#. module: leap_catering_management
+#: model:ir.model,name:leap_catering_management.model_catering_event_category
+msgid "Catering Event Category"
+msgstr "外燴活動類別"
+
+#. module: leap_catering_management
+#: model:ir.model,name:leap_catering_management.model_catering_food_item
+msgid "Catering Food Item"
+msgstr "外燴食品項目"
+
+#. module: leap_catering_management
+#: model:ir.model,name:leap_catering_management.model_catering_food_photo
+msgid "Catering Food Photo"
+msgstr "外燴食物照片"
+
+#. module: leap_catering_management
+#: model:ir.model,name:leap_catering_management.model_catering_food_type
+msgid "Catering Food Type"
+msgstr "外燴食物類型"
+
+#. module: leap_catering_management
+#: model:ir.actions.act_window,name:leap_catering_management.action_catering_invoice
+msgid "Catering Invoices"
+msgstr "外燴發票"
+
+#. module: leap_catering_management
+#: model:ir.ui.menu,name:leap_catering_management.menu_catering_root
+msgid "Catering Management"
+msgstr "外燴管理"
+
+#. module: leap_catering_management
+#: model:ir.model,name:leap_catering_management.model_catering_meal_package
+msgid "Catering Meal Package"
+msgstr "外燴餐點套餐"
+
+#. module: leap_catering_management
+#: model:ir.model,name:leap_catering_management.model_catering_meal_package_line
+msgid "Catering Meal Package Food Item"
+msgstr "套餐食品項目"
+
+#. module: leap_catering_management
+#: model:ir.model,name:leap_catering_management.model_catering_meal_package_price_tier
+msgid "Catering Meal Package Price Tier"
+msgstr "套餐價格級距"
+
+#. module: leap_catering_management
+#: model:ir.actions.report,name:leap_catering_management.action_report_catering_order
+#: model:ir.model,name:leap_catering_management.model_catering_order
+#: model:ir.model.fields,field_description:leap_catering_management.field_crm_lead__catering_order_id
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.view_crm_lead_form_catering
+msgid "Catering Order"
+msgstr "外燴訂單"
+
+#. module: leap_catering_management
+#: model:ir.model,name:leap_catering_management.model_catering_order_charge_line
+msgid "Catering Order Additional Charge Line"
+msgstr "外燴訂單額外費用項目"
+
+#. module: leap_catering_management
+#: model:ir.model,name:leap_catering_management.model_catering_order_checklist_item
+msgid "Catering Order Checklist Item"
+msgstr "外燴訂單檢查清單項目"
+
+#. module: leap_catering_management
+#: model:ir.model,name:leap_catering_management.model_catering_order_package_line
+msgid "Catering Order Meal Package Line"
+msgstr "外燴訂單套餐項目"
+
+#. module: leap_catering_management
+#: model:ir.model,name:leap_catering_management.model_catering_order_tag
+msgid "Catering Order Tag"
+msgstr "外燴訂單標籤"
+
+#. module: leap_catering_management
+#: model:ir.actions.act_window,name:leap_catering_management.action_catering_order
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.portal_my_catering_orders
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.portal_my_home_catering_order
+msgid "Catering Orders"
+msgstr "外燴訂單"
+
+#. module: leap_catering_management
+#: model:ir.model,name:leap_catering_management.model_catering_product
+msgid "Catering Product"
+msgstr "外燴產品"
+
+#. module: leap_catering_management
+#: model:ir.actions.act_window,name:leap_catering_management.action_catering_staff
+#: model:ir.model.fields,field_description:leap_catering_management.field_hr_employee__is_catering_staff
+msgid "Catering Staff"
+msgstr "外燴人員"
+
+#. module: leap_catering_management
+#: model:ir.model,name:leap_catering_management.model_catering_terms_template
+msgid "Catering Terms & Conditions Template"
+msgstr "外燴條款與細則範本"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__amount_charges
+msgid "Charges Total"
+msgstr "費用總計"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__checklist_item_ids
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.view_catering_order_form
+msgid "Checklist"
+msgstr "檢查清單"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_checklist_template__line_ids
+msgid "Checklist Items"
+msgstr "檢查清單項目"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__checklist_progress
+msgid "Checklist Progress"
+msgstr "檢查清單進度"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__checklist_template_id
+msgid "Checklist Template"
+msgstr "檢查清單範本"
+
+#. module: leap_catering_management
+#: model:ir.actions.act_window,name:leap_catering_management.action_catering_checklist_template
+#: model:ir.ui.menu,name:leap_catering_management.menu_catering_checklist_template
+msgid "Checklist Templates"
+msgstr "檢查清單範本"
+
+#. module: leap_catering_management
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.view_catering_checklist_template_form
+msgid "Checklist name"
+msgstr "檢查清單名稱"
+
+#. module: leap_catering_management
+#. odoo-python
+#: code:addons/leap_catering_management/models/catering_order.py:0
+msgid "Click here to rate your experience"
+msgstr "點此為您的體驗評分"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_tag__color
+msgid "Color"
+msgstr "顏色"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__company_id
+msgid "Company"
+msgstr "公司"
+
+#. module: leap_catering_management
+#: model:ir.ui.menu,name:leap_catering_management.menu_catering_configuration
+msgid "Configuration"
+msgstr "設定"
+
+#. module: leap_catering_management
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.view_catering_order_form
+msgid "Confirm"
+msgstr "確認"
+
+#. module: leap_catering_management
+#. odoo-python
+#: code:addons/leap_catering_management/controllers/portal.py:0
+#: model:ir.model.fields.selection,name:leap_catering_management.selection__catering_order__state__confirmed
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.view_catering_order_search
+msgid "Confirmed"
+msgstr "已確認"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_terms_template__content
+msgid "Content"
+msgstr "內容"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_meal_package_line__food_type_id
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.report_catering_meal_package_document
+msgid "Course"
+msgstr "菜式"
+
+#. module: leap_catering_management
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.view_catering_order_form
+msgid "Create Invoice"
+msgstr "建立發票"
+
+#. module: leap_catering_management
+#: model_terms:ir.actions.act_window,help:leap_catering_management.action_catering_order
+msgid "Create your first catering order"
+msgstr "建立您的第一筆外燴訂單"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_checklist_template__create_uid
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_checklist_template_line__create_uid
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_event_category__create_uid
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_food_item__create_uid
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_food_photo__create_uid
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_food_type__create_uid
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_meal_package__create_uid
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_meal_package_line__create_uid
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_meal_package_price_tier__create_uid
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__create_uid
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_cancel_wizard__create_uid
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_charge_line__create_uid
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_checklist_item__create_uid
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_history_wizard__create_uid
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_package_line__create_uid
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_tag__create_uid
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_tag_wizard__create_uid
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_product__create_uid
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_service_charge__create_uid
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_terms_template__create_uid
+msgid "Created by"
+msgstr "建立者"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_checklist_template__create_date
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_checklist_template_line__create_date
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_event_category__create_date
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_food_item__create_date
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_food_photo__create_date
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_food_type__create_date
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_meal_package__create_date
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_meal_package_line__create_date
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_meal_package_price_tier__create_date
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__create_date
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_cancel_wizard__create_date
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_charge_line__create_date
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_checklist_item__create_date
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_history_wizard__create_date
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_package_line__create_date
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_tag__create_date
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_tag_wizard__create_date
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_product__create_date
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_service_charge__create_date
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_terms_template__create_date
+msgid "Created on"
+msgstr "建立於"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_meal_package__currency_id
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_meal_package_price_tier__currency_id
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__currency_id
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_charge_line__currency_id
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_package_line__currency_id
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_product__currency_id
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_service_charge__currency_id
+msgid "Currency"
+msgstr "貨幣"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__partner_id
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_history_wizard__partner_id
+#: model:ir.ui.menu,name:leap_catering_management.menu_catering_customer
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.view_catering_order_search
+msgid "Customer"
+msgstr "客戶"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,help:leap_catering_management.field_catering_order__access_url
+msgid "Customer Portal URL"
+msgstr "客戶入口網站網址"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__rating_value
+msgid "Customer Rating"
+msgstr "客戶評分"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__rating_feedback
+msgid "Customer Review"
+msgstr "客戶評論"
+
+#. module: leap_catering_management
+#: model:ir.actions.act_window,name:leap_catering_management.action_catering_customer
+msgid "Customers"
+msgstr "客戶"
+
+#. module: leap_catering_management
+#: model:ir.ui.menu,name:leap_catering_management.menu_catering_dashboard
+msgid "Dashboard"
+msgstr "儀表板"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_history_wizard__date_from
+msgid "Date From"
+msgstr "開始日期"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_history_wizard__date_to
+msgid "Date To"
+msgstr "結束日期"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_service_charge__price
+msgid "Default Price"
+msgstr "預設價格"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_food_item__description
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_meal_package__description
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_charge_line__name
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_product__description
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_service_charge__description
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.portal_catering_order_page
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.report_catering_order_document
+msgid "Description"
+msgstr "描述"
+
+#. module: leap_catering_management
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.view_catering_food_item_form
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.view_catering_meal_package_form
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.view_catering_product_form
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.view_catering_service_charge_form
+msgid "Description..."
+msgstr "描述..."
+
+#. module: leap_catering_management
+#: model:ir.model.fields.selection,name:leap_catering_management.selection__catering_meal_package__meal_type__dinner
+msgid "Dinner"
+msgstr "晚餐"
+
+#. module: leap_catering_management
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.view_catering_order_cancel_wizard_form
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.view_catering_order_history_wizard_form
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.view_catering_order_tag_wizard_form
+msgid "Discard"
+msgstr "捨棄"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_checklist_template__display_name
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_checklist_template_line__display_name
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_event_category__display_name
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_food_item__display_name
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_food_photo__display_name
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_food_type__display_name
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_meal_package__display_name
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_meal_package_line__display_name
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_meal_package_price_tier__display_name
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__display_name
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_cancel_wizard__display_name
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_charge_line__display_name
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_checklist_item__display_name
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_history_wizard__display_name
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_package_line__display_name
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_tag__display_name
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_tag_wizard__display_name
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_product__display_name
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_service_charge__display_name
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_terms_template__display_name
+#: model:ir.model.fields,field_description:leap_catering_management.field_crm_lead__display_name
+#: model:ir.model.fields,field_description:leap_catering_management.field_hr_employee__display_name
+msgid "Display Name"
+msgstr "顯示名稱"
+
+#. module: leap_catering_management
+#. odoo-python
+#: code:addons/leap_catering_management/controllers/portal.py:0
+#: model:ir.model.fields.selection,name:leap_catering_management.selection__catering_order__state__done
+#: model:ir.model.fields.selection,name:leap_catering_management.selection__catering_order_checklist_item__state__done
+msgid "Done"
+msgstr "完成"
+
+#. module: leap_catering_management
+#. odoo-python
+#: code:addons/leap_catering_management/controllers/portal.py:0
+#: model:ir.model.fields.selection,name:leap_catering_management.selection__catering_order__state__draft
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.view_catering_order_search
+msgid "Draft"
+msgstr "草稿"
+
+#. module: leap_catering_management
+#: model:ir.model,name:leap_catering_management.model_hr_employee
+msgid "Employee"
+msgstr "員工"
+
+#. module: leap_catering_management
+#. odoo-python
+#: code:addons/leap_catering_management/controllers/portal.py:0
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__event_date
+#: model:ir.model.fields,field_description:leap_catering_management.field_crm_lead__catering_event_date
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.portal_my_catering_orders
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.view_catering_order_search
+msgid "Event Date"
+msgstr "活動日期"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__event_category_id
+#: model:ir.model.fields,field_description:leap_catering_management.field_crm_lead__catering_event_category_id
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.view_catering_order_search
+msgid "Event Type"
+msgstr "活動類型"
+
+#. module: leap_catering_management
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.report_catering_order_document
+msgid "Event Type:"
+msgstr "活動類型："
+
+#. module: leap_catering_management
+#: model:ir.actions.act_window,name:leap_catering_management.action_catering_event_category
+#: model:ir.ui.menu,name:leap_catering_management.menu_catering_event_category
+msgid "Event Types"
+msgstr "活動類型"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__message_follower_ids
+msgid "Followers"
+msgstr "關注者"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "關注者（夥伴）"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,help:leap_catering_management.field_catering_order__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr "Font Awesome 圖示，例如 fa-tasks"
+
+#. module: leap_catering_management
+#: model:ir.ui.menu,name:leap_catering_management.menu_catering_food
+msgid "Food"
+msgstr "食物"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_meal_package_line__food_item_id
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.report_catering_meal_package_document
+msgid "Food Item"
+msgstr "食品項目"
+
+#. module: leap_catering_management
+#: model:ir.actions.act_window,name:leap_catering_management.action_catering_food_item
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_meal_package__line_ids
+#: model:ir.ui.menu,name:leap_catering_management.menu_catering_food_item
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.view_catering_meal_package_form
+msgid "Food Items"
+msgstr "食品項目"
+
+#. module: leap_catering_management
+#: model:ir.actions.act_window,name:leap_catering_management.action_catering_food_photo
+#: model:ir.ui.menu,name:leap_catering_management.menu_catering_food_photo
+msgid "Food Photo Gallery"
+msgstr "食物照片相簿"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_meal_package__photo_ids
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__photo_ids
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.view_catering_meal_package_form
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.view_catering_order_form
+msgid "Food Photos"
+msgstr "食物照片"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_food_item__food_type_id
+msgid "Food Type"
+msgstr "食物類型"
+
+#. module: leap_catering_management
+#: model:ir.actions.act_window,name:leap_catering_management.action_catering_food_type
+#: model:ir.ui.menu,name:leap_catering_management.menu_catering_food_type
+msgid "Food Types"
+msgstr "食物類型"
+
+#. module: leap_catering_management
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.view_catering_food_item_form
+msgid "Food item name"
+msgstr "食品項目名稱"
+
+#. module: leap_catering_management
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.view_crm_lead_form_catering
+msgid "Generate Catering Order"
+msgstr "產生外燴訂單"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__guest_count
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_package_line__guest_count
+#: model:ir.model.fields,field_description:leap_catering_management.field_crm_lead__catering_guest_count
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.portal_my_catering_orders
+msgid "Guests"
+msgstr "賓客"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__has_message
+msgid "Has Message"
+msgstr "有訊息"
+
+#. module: leap_catering_management
+#. odoo-python
+#: code:addons/leap_catering_management/models/catering_order.py:0
+msgid "Hello %(partner)s,"
+msgstr "您好 %(partner)s，"
+
+#. module: leap_catering_management
+#. odoo-python
+#: code:addons/leap_catering_management/models/catering_order.py:0
+msgid "How was your catering experience?"
+msgstr "您的外燴體驗如何？"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_checklist_template__id
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_checklist_template_line__id
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_event_category__id
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_food_item__id
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_food_photo__id
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_food_type__id
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_meal_package__id
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_meal_package_line__id
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_meal_package_price_tier__id
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__id
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_cancel_wizard__id
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_charge_line__id
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_checklist_item__id
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_history_wizard__id
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_package_line__id
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_tag__id
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_tag_wizard__id
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_product__id
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_service_charge__id
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_terms_template__id
+#: model:ir.model.fields,field_description:leap_catering_management.field_crm_lead__id
+#: model:ir.model.fields,field_description:leap_catering_management.field_hr_employee__id
+msgid "ID"
+msgstr "ID"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__activity_exception_icon
+msgid "Icon"
+msgstr "圖示"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,help:leap_catering_management.field_catering_order__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr "用於標示異常活動的圖示。"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,help:leap_catering_management.field_catering_order__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "勾選後，新訊息將需要您的關注。"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,help:leap_catering_management.field_catering_order__message_has_error
+#: model:ir.model.fields,help:leap_catering_management.field_catering_order__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr "勾選後，表示部分訊息傳送發生錯誤。"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,help:leap_catering_management.field_hr_employee__is_catering_staff
+msgid "If checked, this employee can be assigned to catering orders."
+msgstr "勾選後，該員工即可被指派至外燴訂單。"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_food_item__image
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_food_photo__image
+msgid "Image"
+msgstr "圖片"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__invoice_id
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.view_catering_order_form
+msgid "Invoice"
+msgstr "發票"
+
+#. module: leap_catering_management
+#. odoo-python
+#: code:addons/leap_catering_management/controllers/portal.py:0
+#: model:ir.model.fields.selection,name:leap_catering_management.selection__catering_order__state__invoiced
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.view_catering_order_search
+msgid "Invoiced"
+msgstr "已開立發票"
+
+#. module: leap_catering_management
+#: model:ir.ui.menu,name:leap_catering_management.menu_catering_invoice
+msgid "Invoices"
+msgstr "發票"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__invoice_policy
+msgid "Invoicing"
+msgstr "開立發票方式"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__message_is_follower
+msgid "Is Follower"
+msgstr "是否關注"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_checklist_template__write_uid
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_checklist_template_line__write_uid
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_event_category__write_uid
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_food_item__write_uid
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_food_photo__write_uid
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_food_type__write_uid
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_meal_package__write_uid
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_meal_package_line__write_uid
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_meal_package_price_tier__write_uid
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__write_uid
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_cancel_wizard__write_uid
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_charge_line__write_uid
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_checklist_item__write_uid
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_history_wizard__write_uid
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_package_line__write_uid
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_tag__write_uid
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_tag_wizard__write_uid
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_product__write_uid
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_service_charge__write_uid
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_terms_template__write_uid
+msgid "Last Updated by"
+msgstr "最後更新者"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_checklist_template__write_date
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_checklist_template_line__write_date
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_event_category__write_date
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_food_item__write_date
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_food_photo__write_date
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_food_type__write_date
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_meal_package__write_date
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_meal_package_line__write_date
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_meal_package_price_tier__write_date
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__write_date
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_cancel_wizard__write_date
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_charge_line__write_date
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_checklist_item__write_date
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_history_wizard__write_date
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_package_line__write_date
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_tag__write_date
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_tag_wizard__write_date
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_product__write_date
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_service_charge__write_date
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_terms_template__write_date
+msgid "Last Updated on"
+msgstr "最後更新於"
+
+#. module: leap_catering_management
+#: model:ir.model,name:leap_catering_management.model_crm_lead
+msgid "Lead"
+msgstr "潛在客戶"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,help:leap_catering_management.field_catering_meal_package_price_tier__max_guests
+msgid "Leave empty for no upper limit."
+msgstr "留空表示無上限。"
+
+#. module: leap_catering_management
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.view_catering_order_form
+msgid "Load Checklist"
+msgstr "載入檢查清單"
+
+#. module: leap_catering_management
+#: model:ir.model.fields.selection,name:leap_catering_management.selection__catering_meal_package__meal_type__lunch
+msgid "Lunch"
+msgstr "午餐"
+
+#. module: leap_catering_management
+#: model:res.groups,name:leap_catering_management.group_catering_manager
+msgid "Manager"
+msgstr "經理"
+
+#. module: leap_catering_management
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.view_catering_order_form
+msgid "Mark Done"
+msgstr "標示為完成"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_meal_package_price_tier__max_guests
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.report_catering_meal_package_document
+msgid "Max Guests"
+msgstr "最多賓客數"
+
+#. module: leap_catering_management
+#: model:ir.actions.report,name:leap_catering_management.action_report_catering_meal_package
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_package_line__package_id
+#: model:ir.ui.menu,name:leap_catering_management.menu_catering_meal_package
+msgid "Meal Package"
+msgstr "餐點套餐"
+
+#. module: leap_catering_management
+#: model:ir.actions.act_window,name:leap_catering_management.action_catering_meal_package
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__package_line_ids
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.view_catering_order_form
+msgid "Meal Packages"
+msgstr "餐點套餐"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_meal_package__meal_type
+msgid "Meal Type"
+msgstr "餐點類型"
+
+#. module: leap_catering_management
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.view_catering_meal_package_form
+msgid "Menu"
+msgstr "菜單"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_meal_package__menu_pdf
+msgid "Menu PDF"
+msgstr "菜單 PDF"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_meal_package__menu_pdf_filename
+msgid "Menu Pdf Filename"
+msgstr "菜單 PDF 檔名"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__message_has_error
+msgid "Message Delivery error"
+msgstr "訊息傳送錯誤"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__message_ids
+msgid "Messages"
+msgstr "訊息"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_meal_package_price_tier__min_guests
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.report_catering_meal_package_document
+msgid "Min Guests"
+msgstr "最少賓客數"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr "我的活動期限"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_checklist_template__name
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_checklist_template_line__name
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_event_category__name
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_food_item__name
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_food_photo__name
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_food_type__name
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_meal_package__name
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__name
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_checklist_item__name
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_tag__name
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_product__name
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_service_charge__name
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_terms_template__name
+msgid "Name"
+msgstr "名稱"
+
+#. module: leap_catering_management
+#. odoo-python
+#: code:addons/leap_catering_management/models/catering_order.py:0
+msgid "New"
+msgstr "新增"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__activity_calendar_event_id
+msgid "Next Activity Calendar Event"
+msgstr "下一個活動行事曆事件"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr "下一個活動期限"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__activity_summary
+msgid "Next Activity Summary"
+msgstr "下一個活動摘要"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__activity_type_id
+msgid "Next Activity Type"
+msgstr "下一個活動類型"
+
+#. module: leap_catering_management
+#. odoo-python
+#: code:addons/leap_catering_management/wizards/catering_order_history_wizard.py:0
+msgid "No orders found for the selected criteria."
+msgstr "找不到符合所選條件的訂單。"
+
+#. module: leap_catering_management
+#. odoo-python
+#: code:addons/leap_catering_management/wizards/catering_order_tag_wizard.py:0
+msgid "No orders selected."
+msgstr "未選取任何訂單。"
+
+#. module: leap_catering_management
+#. odoo-python
+#: code:addons/leap_catering_management/wizards/catering_order_cancel_wizard.py:0
+msgid "None of the selected orders are in draft state."
+msgstr "所選訂單皆非草稿狀態。"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_meal_package_line__note
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.report_catering_meal_package_document
+msgid "Note"
+msgstr "備註"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__message_needaction_counter
+msgid "Number of Actions"
+msgstr "動作數量"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__message_has_error_counter
+msgid "Number of errors"
+msgstr "錯誤數量"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,help:leap_catering_management.field_catering_order__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr "需要處理的訊息數量"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,help:leap_catering_management.field_catering_order__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "傳送錯誤的訊息數量"
+
+#. module: leap_catering_management
+#. odoo-python
+#: code:addons/leap_catering_management/models/catering_order.py:0
+msgid "Only cancelled orders can be reset to draft."
+msgstr "只有已取消的訂單才能重設為草稿。"
+
+#. module: leap_catering_management
+#. odoo-python
+#: code:addons/leap_catering_management/models/catering_order.py:0
+msgid "Only confirmed or invoiced orders can be marked as done."
+msgstr "只有已確認或已開立發票的訂單才能標示為完成。"
+
+#. module: leap_catering_management
+#. odoo-python
+#: code:addons/leap_catering_management/models/catering_order.py:0
+msgid "Only confirmed orders can be invoiced."
+msgstr "只有已確認的訂單才能開立發票。"
+
+#. module: leap_catering_management
+#. odoo-python
+#: code:addons/leap_catering_management/models/catering_order.py:0
+msgid "Only draft orders can be confirmed."
+msgstr "只有草稿訂單才能確認。"
+
+#. module: leap_catering_management
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.view_catering_order_cancel_wizard_form
+msgid ""
+"Only the selected orders that are still in <strong>Draft</strong> will be "
+"cancelled."
+msgstr "僅會取消仍處於<strong>草稿</strong>狀態的所選訂單。"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_charge_line__order_id
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_checklist_item__order_id
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_package_line__order_id
+msgid "Order"
+msgstr "訂單"
+
+#. module: leap_catering_management
+#: model:ir.actions.act_window,name:leap_catering_management.action_catering_order_analysis
+msgid "Order Analysis"
+msgstr "訂單分析"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__attachment_count
+msgid "Order Attachment Count"
+msgstr "訂單附件數量"
+
+#. module: leap_catering_management
+#: model:ir.actions.act_window,name:leap_catering_management.action_catering_order_tag
+#: model:ir.ui.menu,name:leap_catering_management.menu_catering_order_tag
+msgid "Order Tags"
+msgstr "訂單標籤"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_cancel_wizard__order_ids
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_tag_wizard__order_ids
+#: model:ir.ui.menu,name:leap_catering_management.menu_catering_order
+msgid "Orders"
+msgstr "訂單"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_meal_package_line__package_id
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_meal_package_price_tier__package_id
+msgid "Package"
+msgstr "套餐"
+
+#. module: leap_catering_management
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.view_catering_meal_package_form
+msgid "Package name"
+msgstr "套餐名稱"
+
+#. module: leap_catering_management
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.report_catering_order_document
+msgid "Packages"
+msgstr "套餐"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__amount_packages
+msgid "Packages Total"
+msgstr "套餐總計"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__invoice_status
+msgid "Payment Status"
+msgstr "付款狀態"
+
+#. module: leap_catering_management
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.view_catering_food_photo_kanban
+msgid "Photo"
+msgstr "照片"
+
+#. module: leap_catering_management
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.view_catering_food_photo_form
+msgid "Photo name"
+msgstr "照片名稱"
+
+#. module: leap_catering_management
+#. odoo-python
+#: code:addons/leap_catering_management/models/catering_order.py:0
+msgid "Please configure an income account before creating an invoice."
+msgstr "建立發票前，請先設定收入科目。"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__access_url
+msgid "Portal Access URL"
+msgstr "入口網站存取網址"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_package_line__unit_price
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.report_catering_meal_package_document
+msgid "Price / Head"
+msgstr "每人價格"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_meal_package_price_tier__price_per_head
+msgid "Price Per Head"
+msgstr "每人單價"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_meal_package__price_tier_ids
+msgid "Price Tiers"
+msgstr "價格級距"
+
+#. module: leap_catering_management
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.report_catering_meal_package_document
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.view_catering_meal_package_form
+msgid "Price per Head"
+msgstr "每人單價"
+
+#. module: leap_catering_management
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.view_catering_meal_package_form
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.view_catering_order_form
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.view_catering_order_history_wizard_form
+msgid "Print"
+msgstr "列印"
+
+#. module: leap_catering_management
+#: model:ir.model,name:leap_catering_management.model_catering_order_history_wizard
+msgid "Print Catering Order History"
+msgstr "列印外燴訂單歷史記錄"
+
+#. module: leap_catering_management
+#: model:ir.actions.act_window,name:leap_catering_management.action_catering_order_history_wizard
+#: model:ir.ui.menu,name:leap_catering_management.menu_catering_order_history
+msgid "Print Order History"
+msgstr "列印訂單歷史記錄"
+
+#. module: leap_catering_management
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.view_catering_product_form
+msgid "Product name"
+msgstr "產品名稱"
+
+#. module: leap_catering_management
+#: model:ir.actions.act_window,name:leap_catering_management.action_catering_product
+#: model:ir.ui.menu,name:leap_catering_management.menu_catering_product
+msgid "Products"
+msgstr "產品"
+
+#. module: leap_catering_management
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.portal_catering_order_page
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.report_catering_order_document
+msgid "Qty"
+msgstr "數量"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_charge_line__quantity
+msgid "Quantity"
+msgstr "數量"
+
+#. module: leap_catering_management
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.portal_catering_order_page
+msgid "Rate Your Experience"
+msgstr "為您的體驗評分"
+
+#. module: leap_catering_management
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.view_catering_order_form
+msgid "Rating"
+msgstr "評分"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__rating_requested_on
+msgid "Rating Requested On"
+msgstr "評分邀請日期"
+
+#. module: leap_catering_management
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.view_catering_order_cancel_wizard_form
+msgid "Reason for cancellation..."
+msgstr "取消原因..."
+
+#. module: leap_catering_management
+#. odoo-python
+#: code:addons/leap_catering_management/controllers/portal.py:0
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.portal_my_catering_orders
+msgid "Reference"
+msgstr "參考編號"
+
+#. module: leap_catering_management
+#: model:ir.ui.menu,name:leap_catering_management.menu_catering_reporting
+msgid "Reporting"
+msgstr "報表"
+
+#. module: leap_catering_management
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.view_catering_order_form
+msgid "Request Rating"
+msgstr "邀請評分"
+
+#. module: leap_catering_management
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.view_catering_order_form
+msgid "Reset to Draft"
+msgstr "重設為草稿"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__activity_user_id
+msgid "Responsible User"
+msgstr "負責人員"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "簡訊傳送錯誤"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_product__price
+msgid "Sales Price"
+msgstr "銷售價格"
+
+#. module: leap_catering_management
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.portal_catering_order_page
+msgid "Score:"
+msgstr "分數："
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__access_token
+msgid "Security Token"
+msgstr "安全權杖"
+
+#. module: leap_catering_management
+#. odoo-python
+#: code:addons/leap_catering_management/models/catering_order.py:0
+msgid "Select a checklist template first."
+msgstr "請先選擇檢查清單範本。"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_checklist_template_line__sequence
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_food_type__sequence
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_meal_package_line__sequence
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_checklist_item__sequence
+msgid "Sequence"
+msgstr "順序"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_charge_line__service_charge_id
+msgid "Service Charge"
+msgstr "服務費用"
+
+#. module: leap_catering_management
+#. odoo-python
+#: code:addons/leap_catering_management/models/crm_lead.py:0
+msgid "Set a customer on the lead before generating a catering order."
+msgstr "產生外燴訂單前，請先在潛在客戶上設定客戶。"
+
+#. module: leap_catering_management
+#: model:ir.model.fields.selection,name:leap_catering_management.selection__catering_order__invoice_policy__single
+msgid "Single invoice line"
+msgstr "單一發票項目"
+
+#. module: leap_catering_management
+#: model:ir.model.fields.selection,name:leap_catering_management.selection__catering_meal_package__meal_type__snack
+msgid "Snack / Cocktail"
+msgstr "點心／雞尾酒會"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__opportunity_id
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.view_catering_order_form
+msgid "Source Lead"
+msgstr "來源潛在客戶"
+
+#. module: leap_catering_management
+#: model:ir.model.fields.selection,name:leap_catering_management.selection__catering_order__invoice_policy__split
+msgid "Split by package / charge"
+msgstr "依套餐／費用拆分"
+
+#. module: leap_catering_management
+#: model:ir.ui.menu,name:leap_catering_management.menu_catering_staff
+msgid "Staff"
+msgstr "員工"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__state
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_checklist_item__state
+msgid "State"
+msgstr "狀態"
+
+#. module: leap_catering_management
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.portal_my_catering_orders
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.view_catering_order_search
+msgid "Status"
+msgstr "狀態"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,help:leap_catering_management.field_catering_order__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+"依活動狀態\n"
+"逾期：到期日已過\n"
+"今天：活動日期為今天\n"
+"已排程：未來的活動。"
+
+#. module: leap_catering_management
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.portal_catering_order_page
+msgid "Submit Rating"
+msgstr "送出評分"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_charge_line__price_subtotal
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_package_line__price_subtotal
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.portal_catering_order_page
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.report_catering_order_document
+msgid "Subtotal"
+msgstr "小計"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__tag_ids
+msgid "Tags"
+msgstr "標籤"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_tag_wizard__tag_ids
+msgid "Tags to Add"
+msgstr "欲新增的標籤"
+
+#. module: leap_catering_management
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.portal_catering_order_page
+msgid "Tell us about your experience (optional)"
+msgstr "與我們分享您的體驗（選填）"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_checklist_template_line__template_id
+msgid "Template"
+msgstr "範本"
+
+#. module: leap_catering_management
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.view_catering_terms_template_form
+msgid "Template name"
+msgstr "範本名稱"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__notes
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.view_catering_order_form
+msgid "Terms & Conditions"
+msgstr "條款與細則"
+
+#. module: leap_catering_management
+#: model:ir.actions.act_window,name:leap_catering_management.action_catering_terms_template
+#: model:ir.ui.menu,name:leap_catering_management.menu_catering_terms_template
+msgid "Terms & Conditions Templates"
+msgstr "條款與細則範本"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__terms_template_id
+msgid "Terms Template"
+msgstr "條款範本"
+
+#. module: leap_catering_management
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.view_catering_order_form
+msgid "Terms and conditions for this order..."
+msgstr "此訂單的條款與細則..."
+
+#. module: leap_catering_management
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.view_catering_terms_template_form
+msgid "Terms and conditions text..."
+msgstr "條款與細則文字內容..."
+
+#. module: leap_catering_management
+#. odoo-python
+#: code:addons/leap_catering_management/models/catering_order.py:0
+msgid "The customer has no email address on file."
+msgstr "客戶未登記電子郵件地址。"
+
+#. module: leap_catering_management
+#. odoo-python
+#: code:addons/leap_catering_management/wizards/catering_order_history_wizard.py:0
+msgid "The start date must be before the end date."
+msgstr "開始日期必須早於結束日期。"
+
+#. module: leap_catering_management
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.portal_my_catering_orders
+msgid "There are no catering orders."
+msgstr "目前沒有外燴訂單。"
+
+#. module: leap_catering_management
+#: model:ir.model.constraint,message:leap_catering_management.constraint_catering_event_category_name_uniq
+msgid "This event category already exists."
+msgstr "此活動類別已存在。"
+
+#. module: leap_catering_management
+#: model:ir.model.constraint,message:leap_catering_management.constraint_catering_food_type_name_uniq
+msgid "This food type already exists."
+msgstr "此食物類型已存在。"
+
+#. module: leap_catering_management
+#. odoo-python
+#: code:addons/leap_catering_management/models/catering_order.py:0
+msgid "This order has already been invoiced."
+msgstr "此訂單已開立發票。"
+
+#. module: leap_catering_management
+#: model:ir.model.constraint,message:leap_catering_management.constraint_catering_order_tag_name_uniq
+msgid "This tag already exists."
+msgstr "此標籤已存在。"
+
+#. module: leap_catering_management
+#: model:ir.model.fields.selection,name:leap_catering_management.selection__catering_order_checklist_item__state__todo
+msgid "To Do"
+msgstr "待辦"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__amount_total
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.portal_catering_order_page
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.portal_my_catering_orders
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.report_catering_order_document
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.view_catering_order_form
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.view_catering_order_list
+msgid "Total"
+msgstr "總計"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,help:leap_catering_management.field_catering_order__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr "記錄中例外活動的類型。"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_charge_line__unit_price
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.portal_catering_order_page
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.report_catering_order_document
+msgid "Unit Price"
+msgstr "單價"
+
+#. module: leap_catering_management
+#: model:ir.actions.act_window,name:leap_catering_management.action_catering_order_tag_wizard
+msgid "Update Tags"
+msgstr "更新標籤"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_food_photo__order_ids
+msgid "Used in Orders"
+msgstr "用於訂單"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_food_photo__package_ids
+msgid "Used in Packages"
+msgstr "用於套餐"
+
+#. module: leap_catering_management
+#: model:res.groups,name:leap_catering_management.group_catering_user
+msgid "User"
+msgstr "使用者"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__venue
+#: model:ir.model.fields,field_description:leap_catering_management.field_crm_lead__catering_venue
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.portal_my_catering_orders
+msgid "Venue"
+msgstr "場地"
+
+#. module: leap_catering_management
+#. odoo-python
+#: code:addons/leap_catering_management/models/catering_order.py:0
+msgid ""
+"We hope you enjoyed your event! We would love to hear your feedback on "
+"%(order)s."
+msgstr "希望您享受這次的活動！我們很樂意聽取您對 %(order)s 的意見。"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__website_message_ids
+msgid "Website Messages"
+msgstr "網站訊息"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,help:leap_catering_management.field_catering_order__website_message_ids
+msgid "Website communication history"
+msgstr "網站溝通紀錄"
+
+#. module: leap_catering_management
+#. odoo-python
+#: code:addons/leap_catering_management/models/catering_order.py:0
+msgid "You can only request a rating once the order is done."
+msgstr "僅能在訂單完成後邀請評分。"
+
+#. module: leap_catering_management
+#. odoo-python
+#: code:addons/leap_catering_management/models/catering_order.py:0
+msgid "You cannot cancel an already invoiced order."
+msgstr "無法取消已開立發票的訂單。"
+
+#. module: leap_catering_management
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.portal_catering_order_page
+msgid "Your Rating"
+msgstr "您的評分"
+
+#. module: leap_catering_management
+#. odoo-python
+#: code:addons/leap_catering_management/models/catering_order.py:0
+msgid "res_id"
+msgstr ""
+
+#. module: leap_catering_management
+#. odoo-python
+#: code:addons/leap_catering_management/models/catering_order.py:0
+msgid "res_model"
+msgstr ""
+
+#. module: leap_catering_management
+#. odoo-python
+#: code:addons/leap_catering_management/controllers/portal.py:0
+msgid "state"
+msgstr ""

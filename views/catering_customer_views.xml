@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="action_catering_customer" model="ir.actions.act_window">
+        <field name="name">Customers</field>
+        <field name="res_model">res.partner</field>
+        <field name="view_mode">list,kanban,form</field>
+        <field name="domain">[('customer_rank', '&gt;', 0)]</field>
+        <field name="context">{'default_customer_rank': 1, 'res_partner_search_mode': 'customer'}</field>
+    </record>
+
+    <record id="action_catering_staff" model="ir.actions.act_window">
+        <field name="name">Catering Staff</field>
+        <field name="res_model">hr.employee</field>
+        <field name="view_mode">list,kanban,form</field>
+        <field name="domain">[('is_catering_staff', '=', True)]</field>
+        <field name="context">{'default_is_catering_staff': True}</field>
+    </record>
+</odoo>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_catering_order_list" model="ir.ui.view">
+        <field name="name">catering.order.list</field>
+        <field name="model">catering.order</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name"/>
+                <field name="partner_id"/>
+                <field name="event_category_id"/>
+                <field name="event_date"/>
+                <field name="guest_count"/>
+                <field name="tag_ids" widget="many2many_tags" options="{'color_field': 'color'}"/>
+                <field name="amount_total" sum="Total"/>
+                <field name="state" widget="badge" decoration-success="state == 'done'" decoration-info="state == 'confirmed'" decoration-danger="state == 'cancelled'"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_catering_order_form" model="ir.ui.view">
+        <field name="name">catering.order.form</field>
+        <field name="model">catering.order</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                    <button name="action_confirm" type="object" string="Confirm" class="oe_highlight" invisible="state != 'draft'"/>
+                    <button name="action_create_invoice" type="object" string="Create Invoice" class="oe_highlight" invisible="state != 'confirmed'"/>
+                    <button name="action_done" type="object" string="Mark Done" invisible="state not in ('confirmed', 'invoiced')"/>
+                    <button name="action_cancel" type="object" string="Cancel" invisible="state in ('cancelled', 'invoiced', 'done')"/>
+                    <button name="action_set_draft" type="object" string="Reset to Draft" invisible="state != 'cancelled'"/>
+                    <button name="action_send_rating_request" type="object" string="Request Rating" invisible="state != 'done'"/>
+                    <button name="%(action_report_catering_order)d" type="action" string="Print" class="btn-secondary"/>
+                    <field name="state" widget="statusbar" statusbar_visible="draft,confirmed,invoiced,done"/>
+                </header>
+                <sheet>
+                    <widget name="web_ribbon" title="Cancelled" bg_color="text-bg-danger" invisible="state != 'cancelled'"/>
+                    <field name="cancel_reason" invisible="state != 'cancelled' or not cancel_reason" readonly="1"/>
+                    <div class="oe_button_box" name="button_box">
+                        <button name="action_view_invoice" type="object" string="Invoice" class="oe_stat_button" icon="fa-pencil-square-o" invisible="not invoice_id"/>
+                        <button name="action_view_opportunity" type="object" string="Source Lead" class="oe_stat_button" icon="fa-handshake-o" invisible="not opportunity_id"/>
+                        <button name="action_view_attachments" type="object" class="oe_stat_button" icon="fa-paperclip">
+                            <field name="attachment_count" widget="statinfo" string="Attachments"/>
+                        </button>
+                    </div>
+                    <div class="oe_title">
+                        <h1><field name="name" readonly="1"/></h1>
+                    </div>
+                    <field name="tag_ids" widget="many2many_tags" options="{'color_field': 'color'}"/>
+                    <group>
+                        <group>
+                            <field name="partner_id"/>
+                            <field name="event_category_id"/>
+                            <field name="event_date"/>
+                            <field name="venue"/>
+                        </group>
+                        <group>
+                            <field name="guest_count"/>
+                            <field name="staff_ids" widget="many2many_tags"/>
+                            <field name="invoice_policy"/>
+                            <field name="company_id" groups="base.group_multi_company"/>
+                            <field name="currency_id" invisible="1"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Meal Packages" name="packages">
+                            <field name="package_line_ids" context="{'default_guest_count': guest_count}">
+                                <list editable="bottom">
+                                    <field name="package_id"/>
+                                    <field name="guest_count"/>
+                                    <field name="unit_price"/>
+                                    <field name="price_subtotal" sum="Total"/>
+                                    <field name="currency_id" column_invisible="1"/>
+                                </list>
+                            </field>
+                        </page>
+                        <page string="Additional Charges" name="charges">
+                            <field name="charge_line_ids">
+                                <list editable="bottom">
+                                    <field name="service_charge_id"/>
+                                    <field name="name"/>
+                                    <field name="quantity"/>
+                                    <field name="unit_price"/>
+                                    <field name="price_subtotal" sum="Total"/>
+                                    <field name="currency_id" column_invisible="1"/>
+                                </list>
+                            </field>
+                        </page>
+                        <page string="Checklist" name="checklist">
+                            <group>
+                                <field name="checklist_template_id"/>
+                                <field name="checklist_progress" widget="progressbar"/>
+                            </group>
+                            <button name="action_load_checklist" type="object" string="Load Checklist" class="btn-secondary" invisible="not checklist_template_id"/>
+                            <field name="checklist_item_ids">
+                                <list editable="bottom">
+                                    <field name="sequence" widget="handle"/>
+                                    <field name="name"/>
+                                    <field name="state" widget="badge" decoration-success="state == 'done'" decoration-danger="state == 'cancelled'"/>
+                                </list>
+                            </field>
+                        </page>
+                        <page string="Food Photos" name="photos">
+                            <field name="photo_ids" widget="many2many">
+                                <list>
+                                    <field name="image" widget="image" options="{'size': [40, 40]}"/>
+                                    <field name="name"/>
+                                </list>
+                            </field>
+                        </page>
+                        <page string="Rating" name="rating">
+                            <group>
+                                <field name="rating_requested_on" readonly="1"/>
+                                <field name="rating_value" readonly="1"/>
+                                <field name="rating_feedback" readonly="1"/>
+                            </group>
+                        </page>
+                        <page string="Terms &amp; Conditions" name="notes">
+                            <field name="terms_template_id"/>
+                            <field name="notes" placeholder="Terms and conditions for this order..."/>
+                        </page>
+                    </notebook>
+                    <group class="oe_subtotal_footer">
+                        <field name="amount_packages"/>
+                        <field name="amount_charges"/>
+                        <field name="amount_total" class="oe_subtotal_footer_separator"/>
+                    </group>
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_catering_order_search" model="ir.ui.view">
+        <field name="name">catering.order.search</field>
+        <field name="model">catering.order</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name"/>
+                <field name="partner_id"/>
+                <field name="event_category_id"/>
+                <filter string="Draft" name="draft" domain="[('state', '=', 'draft')]"/>
+                <filter string="Confirmed" name="confirmed" domain="[('state', '=', 'confirmed')]"/>
+                <filter string="Invoiced" name="invoiced" domain="[('state', '=', 'invoiced')]"/>
+                <separator/>
+                <filter string="Event Date" name="event_date" date="event_date"/>
+                <group>
+                    <filter string="Status" name="group_state" context="{'group_by': 'state'}"/>
+                    <filter string="Event Type" name="group_event_category" context="{'group_by': 'event_category_id'}"/>
+                    <filter string="Customer" name="group_partner" context="{'group_by': 'partner_id'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="action_catering_order" model="ir.actions.act_window">
+        <field name="name">Catering Orders</field>
+        <field name="res_model">catering.order</field>
+        <field name="view_mode">list,form</field>
+        <field name="search_view_id" ref="view_catering_order_search"/>
+        <field name="context">{'search_default_draft': 0}</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smart_action">
+                Create your first catering order
+            </p>
+        </field>
+    </record>
+</odoo>

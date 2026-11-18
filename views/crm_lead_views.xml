@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_crm_lead_form_catering" model="ir.ui.view">
+        <field name="name">crm.lead.form.catering</field>
+        <field name="model">crm.lead</field>
+        <field name="inherit_id" ref="crm.crm_lead_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//div[@name='button_box']" position="inside">
+                <button name="action_view_catering_order" type="object" string="Catering Order" class="oe_stat_button" icon="fa-cutlery" invisible="not catering_order_id"/>
+            </xpath>
+            <xpath expr="//notebook" position="inside">
+                <page string="Catering" name="catering">
+                    <group>
+                        <group>
+                            <field name="catering_event_category_id"/>
+                            <field name="catering_event_date"/>
+                        </group>
+                        <group>
+                            <field name="catering_venue"/>
+                            <field name="catering_guest_count"/>
+                        </group>
+                    </group>
+                    <field name="catering_order_id" invisible="1"/>
+                    <button name="action_create_catering_order" type="object" string="Generate Catering Order" class="btn-primary" invisible="catering_order_id"/>
+                </page>
+            </xpath>
+        </field>
+    </record>
+</odoo>

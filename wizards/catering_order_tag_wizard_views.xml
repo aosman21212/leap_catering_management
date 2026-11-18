@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_catering_order_tag_wizard_form" model="ir.ui.view">
+        <field name="name">catering.order.tag.wizard.form</field>
+        <field name="model">catering.order.tag.wizard</field>
+        <field name="arch" type="xml">
+            <form>
+                <p>Add the selected tags to all the chosen orders.</p>
+                <group>
+                    <field name="order_ids" widget="many2many_tags" readonly="1"/>
+                    <field name="tag_ids" widget="many2many_tags" options="{'color_field': 'color'}"/>
+                </group>
+                <footer>
+                    <button name="button_apply" type="object" string="Apply Tags" class="btn-primary"/>
+                    <button string="Discard" class="btn-secondary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_catering_order_tag_wizard" model="ir.actions.act_window">
+        <field name="name">Update Tags</field>
+        <field name="res_model">catering.order.tag.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+        <field name="binding_model_id" ref="model_catering_order"/>
+        <field name="binding_view_types">list</field>
+    </record>
+</odoo>

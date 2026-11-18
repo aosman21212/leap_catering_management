@@ -1,0 +1,1655 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* leap_catering_management
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-18 16:58+0000\n"
+"PO-Revision-Date: 2026-11-18 16:58+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: leap_catering_management
+#. odoo-python
+#: code:addons/leap_catering_management/models/catering_order.py:0
+msgid "%(package)s (%(guests)s guests)"
+msgstr "%(package)s (%(guests)s ضيف)"
+
+#. module: leap_catering_management
+#: model:ir.actions.report,print_report_name:leap_catering_management.action_report_catering_order
+msgid "'Catering Order - %s' % (object.name)"
+msgstr ""
+
+#. module: leap_catering_management
+#: model:ir.model.fields.selection,name:leap_catering_management.selection__catering_order__rating_value__1
+msgid "1 - Very Dissatisfied"
+msgstr "1 - غير راضٍ جداً"
+
+#. module: leap_catering_management
+#: model:ir.model.fields.selection,name:leap_catering_management.selection__catering_order__rating_value__2
+msgid "2 - Dissatisfied"
+msgstr "2 - غير راضٍ"
+
+#. module: leap_catering_management
+#: model:ir.model.fields.selection,name:leap_catering_management.selection__catering_order__rating_value__3
+msgid "3 - Neutral"
+msgstr "3 - محايد"
+
+#. module: leap_catering_management
+#: model:ir.model.fields.selection,name:leap_catering_management.selection__catering_order__rating_value__4
+msgid "4 - Satisfied"
+msgstr "4 - راضٍ"
+
+#. module: leap_catering_management
+#: model:ir.model.fields.selection,name:leap_catering_management.selection__catering_order__rating_value__5
+msgid "5 - Very Satisfied"
+msgstr "5 - راضٍ جداً"
+
+#. module: leap_catering_management
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.report_catering_order_document
+msgid ""
+"<br/>\n"
+"                                <strong>Guests:</strong>"
+msgstr ""
+"<br/>\n"
+"                                <strong>الضيوف:</strong>"
+
+#. module: leap_catering_management
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.report_catering_order_document
+msgid ""
+"<br/>\n"
+"                                <strong>Venue:</strong>"
+msgstr ""
+"<br/>\n"
+"                                <strong>المكان:</strong>"
+
+#. module: leap_catering_management
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.portal_catering_order_page
+msgid ""
+"<br/>\n"
+"                        <strong>Guests:</strong>"
+msgstr ""
+"<br/>\n"
+"                        <strong>الضيوف:</strong>"
+
+#. module: leap_catering_management
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.portal_catering_order_page
+msgid ""
+"<br/>\n"
+"                        <strong>Venue:</strong>"
+msgstr ""
+"<br/>\n"
+"                        <strong>المكان:</strong>"
+
+#. module: leap_catering_management
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.portal_catering_order_page
+msgid "<i class=\"fa fa-download me-1\"/>Download PDF"
+msgstr "<i class=\"fa fa-download me-1\"/>تنزيل PDF"
+
+#. module: leap_catering_management
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.portal_catering_order_page
+msgid ""
+"<select name=\"rating_value\" class=\"form-select\" style=\"max-width: 200px;\" required=\"required\">\n"
+"                                    <option value=\"\">Select a score</option>\n"
+"                                    <option value=\"5\">5 - Very Satisfied</option>\n"
+"                                    <option value=\"4\">4 - Satisfied</option>\n"
+"                                    <option value=\"3\">3 - Neutral</option>\n"
+"                                    <option value=\"2\">2 - Dissatisfied</option>\n"
+"                                    <option value=\"1\">1 - Very Dissatisfied</option>\n"
+"                                </select>"
+msgstr ""
+"<select name=\"rating_value\" class=\"form-select\" style=\"max-width: 200px;\" required=\"required\">\n"
+"                                    <option value=\"\">اختر درجة</option>\n"
+"                                    <option value=\"5\">5 - راضٍ جداً</option>\n"
+"                                    <option value=\"4\">4 - راضٍ</option>\n"
+"                                    <option value=\"3\">3 - محايد</option>\n"
+"                                    <option value=\"2\">2 - غير راضٍ</option>\n"
+"                                    <option value=\"1\">1 - غير راضٍ جداً</option>\n"
+"                                </select>"
+
+#. module: leap_catering_management
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.report_catering_order_document
+msgid "<strong>Customer</strong>"
+msgstr "<strong>العميل</strong>"
+
+#. module: leap_catering_management
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.portal_catering_order_page
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.report_catering_order_document
+msgid "<strong>Event Date:</strong>"
+msgstr "<strong>تاريخ الفعالية:</strong>"
+
+#. module: leap_catering_management
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.portal_catering_order_page
+msgid "<strong>Event Type:</strong>"
+msgstr "<strong>نوع الفعالية:</strong>"
+
+#. module: leap_catering_management
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.report_catering_meal_package_document
+msgid "<strong>Meal Type:</strong>"
+msgstr "<strong>نوع الوجبة:</strong>"
+
+#. module: leap_catering_management
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.portal_catering_order_page
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.report_catering_order_document
+msgid "<strong>Terms &amp; Conditions</strong>"
+msgstr "<strong>الشروط والأحكام</strong>"
+
+#. module: leap_catering_management
+#. odoo-python
+#: code:addons/leap_catering_management/models/crm_lead.py:0
+msgid "A catering order has already been generated from this lead."
+msgstr "تم بالفعل إنشاء طلب تقديم طعام من هذا العميل المحتمل."
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__access_warning
+msgid "Access warning"
+msgstr "تحذير الوصول"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__message_needaction
+msgid "Action Needed"
+msgstr "إجراء مطلوب"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_checklist_template__active
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_event_category__active
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_food_item__active
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_food_type__active
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_meal_package__active
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_product__active
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_service_charge__active
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_terms_template__active
+msgid "Active"
+msgstr "نشط"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__activity_ids
+msgid "Activities"
+msgstr "الأنشطة"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr "زخرفة استثناء النشاط"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__activity_state
+msgid "Activity State"
+msgstr "حالة النشاط"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__activity_type_icon
+msgid "Activity Type Icon"
+msgstr "أيقونة نوع النشاط"
+
+#. module: leap_catering_management
+#. odoo-python
+#: code:addons/leap_catering_management/models/catering_order.py:0
+msgid "Add at least one meal package or charge before invoicing."
+msgstr "أضف باقة وجبات واحدة على الأقل أو رسمًا قبل إصدار الفاتورة."
+
+#. module: leap_catering_management
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.view_catering_order_tag_wizard_form
+msgid "Add the selected tags to all the chosen orders."
+msgstr "أضف الوسوم المحددة إلى جميع الطلبات المختارة."
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__charge_line_ids
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.report_catering_order_document
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.view_catering_order_form
+msgid "Additional Charges"
+msgstr "رسوم إضافية"
+
+#. module: leap_catering_management
+#: model:ir.actions.act_window,name:leap_catering_management.action_catering_service_charge
+#: model:ir.ui.menu,name:leap_catering_management.menu_catering_service_charge
+msgid "Additional Items"
+msgstr ""
+
+#. module: leap_catering_management
+#. odoo-python
+#: code:addons/leap_catering_management/controllers/portal.py:0
+msgid "All"
+msgstr "الكل"
+
+#. module: leap_catering_management
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.view_catering_order_tag_wizard_form
+msgid "Apply Tags"
+msgstr "تطبيق الوسوم"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__staff_ids
+msgid "Assigned Staff"
+msgstr "الموظفون المعينون"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__message_attachment_count
+msgid "Attachment Count"
+msgstr "عدد المرفقات"
+
+#. module: leap_catering_management
+#. odoo-python
+#: code:addons/leap_catering_management/models/catering_order.py:0
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.view_catering_order_form
+msgid "Attachments"
+msgstr "المرفقات"
+
+#. module: leap_catering_management
+#: model:ir.model.fields.selection,name:leap_catering_management.selection__catering_meal_package__meal_type__breakfast
+msgid "Breakfast"
+msgstr "الإفطار"
+
+#. module: leap_catering_management
+#: model:ir.model.fields.selection,name:leap_catering_management.selection__catering_meal_package__meal_type__brunch
+msgid "Brunch"
+msgstr "برنش"
+
+#. module: leap_catering_management
+#: model:ir.model.fields.selection,name:leap_catering_management.selection__catering_meal_package__meal_type__buffet
+msgid "Buffet"
+msgstr "بوفيه"
+
+#. module: leap_catering_management
+#: model:ir.model,name:leap_catering_management.model_catering_order_tag_wizard
+msgid "Bulk Update Catering Order Tags"
+msgstr "تحديث جماعي لوسوم طلبات تقديم الطعام"
+
+#. module: leap_catering_management
+#: model:ir.ui.menu,name:leap_catering_management.menu_catering_crm
+msgid "CRM"
+msgstr "إدارة علاقات العملاء"
+
+#. module: leap_catering_management
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.view_catering_order_form
+msgid "Cancel"
+msgstr "إلغاء"
+
+#. module: leap_catering_management
+#: model:ir.model,name:leap_catering_management.model_catering_order_cancel_wizard
+msgid "Cancel Catering Orders"
+msgstr "إلغاء طلبات تقديم الطعام"
+
+#. module: leap_catering_management
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.view_catering_order_cancel_wizard_form
+msgid "Cancel Orders"
+msgstr "إلغاء الطلبات"
+
+#. module: leap_catering_management
+#: model:ir.actions.act_window,name:leap_catering_management.action_catering_order_cancel_wizard
+msgid "Cancel Selected Orders"
+msgstr "إلغاء الطلبات المحددة"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__cancel_reason
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_cancel_wizard__reason
+msgid "Cancellation Reason"
+msgstr "سبب الإلغاء"
+
+#. module: leap_catering_management
+#: model:ir.model.fields.selection,name:leap_catering_management.selection__catering_order__state__cancelled
+#: model:ir.model.fields.selection,name:leap_catering_management.selection__catering_order_checklist_item__state__cancelled
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.view_catering_order_form
+msgid "Cancelled"
+msgstr "ملغى"
+
+#. module: leap_catering_management
+#: model:ir.module.category,name:leap_catering_management.module_category_catering
+#: model:ir.ui.menu,name:leap_catering_management.menu_catering_tab
+#: model:res.groups.privilege,name:leap_catering_management.res_groups_privilege_catering
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.view_crm_lead_form_catering
+msgid "Catering"
+msgstr "تقديم الطعام"
+
+#. module: leap_catering_management
+#: model:ir.model,name:leap_catering_management.model_catering_service_charge
+msgid "Catering Additional Service Charge"
+msgstr "رسم خدمة إضافية لتقديم الطعام"
+
+#. module: leap_catering_management
+#: model:ir.model,name:leap_catering_management.model_catering_checklist_template
+msgid "Catering Checklist Template"
+msgstr "قالب قائمة مراجعة تقديم الطعام"
+
+#. module: leap_catering_management
+#: model:ir.model,name:leap_catering_management.model_catering_checklist_template_line
+msgid "Catering Checklist Template Line"
+msgstr "بند قالب قائمة مراجعة تقديم الطعام"
+
+#. module: leap_catering_management
+#: model:ir.model,name:leap_catering_management.model_catering_event_category
+msgid "Catering Event Category"
+msgstr "فئة فعالية تقديم الطعام"
+
+#. module: leap_catering_management
+#: model:ir.model,name:leap_catering_management.model_catering_food_item
+msgid "Catering Food Item"
+msgstr "صنف طعام"
+
+#. module: leap_catering_management
+#: model:ir.model,name:leap_catering_management.model_catering_food_photo
+msgid "Catering Food Photo"
+msgstr "صورة طعام"
+
+#. module: leap_catering_management
+#: model:ir.model,name:leap_catering_management.model_catering_food_type
+msgid "Catering Food Type"
+msgstr "نوع الطعام"
+
+#. module: leap_catering_management
+#: model:ir.actions.act_window,name:leap_catering_management.action_catering_invoice
+msgid "Catering Invoices"
+msgstr "فواتير تقديم الطعام"
+
+#. module: leap_catering_management
+#: model:ir.ui.menu,name:leap_catering_management.menu_catering_root
+msgid "Catering Management"
+msgstr "إدارة تقديم الطعام"
+
+#. module: leap_catering_management
+#: model:ir.model,name:leap_catering_management.model_catering_meal_package
+msgid "Catering Meal Package"
+msgstr "باقة وجبات تقديم الطعام"
+
+#. module: leap_catering_management
+#: model:ir.model,name:leap_catering_management.model_catering_meal_package_line
+msgid "Catering Meal Package Food Item"
+msgstr "صنف طعام في باقة الوجبات"
+
+#. module: leap_catering_management
+#: model:ir.model,name:leap_catering_management.model_catering_meal_package_price_tier
+msgid "Catering Meal Package Price Tier"
+msgstr "شريحة سعر باقة الوجبات"
+
+#. module: leap_catering_management
+#: model:ir.actions.report,name:leap_catering_management.action_report_catering_order
+#: model:ir.model,name:leap_catering_management.model_catering_order
+#: model:ir.model.fields,field_description:leap_catering_management.field_crm_lead__catering_order_id
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.view_crm_lead_form_catering
+msgid "Catering Order"
+msgstr "طلب تقديم طعام"
+
+#. module: leap_catering_management
+#: model:ir.model,name:leap_catering_management.model_catering_order_charge_line
+msgid "Catering Order Additional Charge Line"
+msgstr "بند رسم إضافي لطلب تقديم الطعام"
+
+#. module: leap_catering_management
+#: model:ir.model,name:leap_catering_management.model_catering_order_checklist_item
+msgid "Catering Order Checklist Item"
+msgstr "بند قائمة مراجعة طلب تقديم الطعام"
+
+#. module: leap_catering_management
+#: model:ir.model,name:leap_catering_management.model_catering_order_package_line
+msgid "Catering Order Meal Package Line"
+msgstr "بند باقة وجبات طلب تقديم الطعام"
+
+#. module: leap_catering_management
+#: model:ir.model,name:leap_catering_management.model_catering_order_tag
+msgid "Catering Order Tag"
+msgstr "وسم طلب تقديم الطعام"
+
+#. module: leap_catering_management
+#: model:ir.actions.act_window,name:leap_catering_management.action_catering_order
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.portal_my_catering_orders
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.portal_my_home_catering_order
+msgid "Catering Orders"
+msgstr "طلبات تقديم الطعام"
+
+#. module: leap_catering_management
+#: model:ir.model,name:leap_catering_management.model_catering_product
+msgid "Catering Product"
+msgstr "منتج تقديم الطعام"
+
+#. module: leap_catering_management
+#: model:ir.actions.act_window,name:leap_catering_management.action_catering_staff
+#: model:ir.model.fields,field_description:leap_catering_management.field_hr_employee__is_catering_staff
+msgid "Catering Staff"
+msgstr "طاقم تقديم الطعام"
+
+#. module: leap_catering_management
+#: model:ir.model,name:leap_catering_management.model_catering_terms_template
+msgid "Catering Terms & Conditions Template"
+msgstr "قالب شروط وأحكام تقديم الطعام"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__amount_charges
+msgid "Charges Total"
+msgstr "إجمالي الرسوم"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__checklist_item_ids
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.view_catering_order_form
+msgid "Checklist"
+msgstr "قائمة المراجعة"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_checklist_template__line_ids
+msgid "Checklist Items"
+msgstr "بنود قائمة المراجعة"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__checklist_progress
+msgid "Checklist Progress"
+msgstr "تقدم قائمة المراجعة"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__checklist_template_id
+msgid "Checklist Template"
+msgstr "قالب قائمة المراجعة"
+
+#. module: leap_catering_management
+#: model:ir.actions.act_window,name:leap_catering_management.action_catering_checklist_template
+#: model:ir.ui.menu,name:leap_catering_management.menu_catering_checklist_template
+msgid "Checklist Templates"
+msgstr "قوالب قوائم المراجعة"
+
+#. module: leap_catering_management
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.view_catering_checklist_template_form
+msgid "Checklist name"
+msgstr "اسم قائمة المراجعة"
+
+#. module: leap_catering_management
+#. odoo-python
+#: code:addons/leap_catering_management/models/catering_order.py:0
+msgid "Click here to rate your experience"
+msgstr "انقر هنا لتقييم تجربتك"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_tag__color
+msgid "Color"
+msgstr "اللون"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__company_id
+msgid "Company"
+msgstr "الشركة"
+
+#. module: leap_catering_management
+#: model:ir.ui.menu,name:leap_catering_management.menu_catering_configuration
+msgid "Configuration"
+msgstr "الإعدادات"
+
+#. module: leap_catering_management
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.view_catering_order_form
+msgid "Confirm"
+msgstr "تأكيد"
+
+#. module: leap_catering_management
+#. odoo-python
+#: code:addons/leap_catering_management/controllers/portal.py:0
+#: model:ir.model.fields.selection,name:leap_catering_management.selection__catering_order__state__confirmed
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.view_catering_order_search
+msgid "Confirmed"
+msgstr "مؤكد"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_terms_template__content
+msgid "Content"
+msgstr "المحتوى"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_meal_package_line__food_type_id
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.report_catering_meal_package_document
+msgid "Course"
+msgstr "الطبق"
+
+#. module: leap_catering_management
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.view_catering_order_form
+msgid "Create Invoice"
+msgstr "إنشاء فاتورة"
+
+#. module: leap_catering_management
+#: model_terms:ir.actions.act_window,help:leap_catering_management.action_catering_order
+msgid "Create your first catering order"
+msgstr "أنشئ أول طلب تقديم طعام"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_checklist_template__create_uid
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_checklist_template_line__create_uid
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_event_category__create_uid
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_food_item__create_uid
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_food_photo__create_uid
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_food_type__create_uid
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_meal_package__create_uid
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_meal_package_line__create_uid
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_meal_package_price_tier__create_uid
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__create_uid
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_cancel_wizard__create_uid
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_charge_line__create_uid
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_checklist_item__create_uid
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_history_wizard__create_uid
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_package_line__create_uid
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_tag__create_uid
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_tag_wizard__create_uid
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_product__create_uid
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_service_charge__create_uid
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_terms_template__create_uid
+msgid "Created by"
+msgstr "أنشئ بواسطة"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_checklist_template__create_date
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_checklist_template_line__create_date
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_event_category__create_date
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_food_item__create_date
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_food_photo__create_date
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_food_type__create_date
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_meal_package__create_date
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_meal_package_line__create_date
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_meal_package_price_tier__create_date
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__create_date
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_cancel_wizard__create_date
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_charge_line__create_date
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_checklist_item__create_date
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_history_wizard__create_date
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_package_line__create_date
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_tag__create_date
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_tag_wizard__create_date
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_product__create_date
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_service_charge__create_date
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_terms_template__create_date
+msgid "Created on"
+msgstr "أنشئ في"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_meal_package__currency_id
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_meal_package_price_tier__currency_id
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__currency_id
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_charge_line__currency_id
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_package_line__currency_id
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_product__currency_id
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_service_charge__currency_id
+msgid "Currency"
+msgstr "العملة"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__partner_id
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_history_wizard__partner_id
+#: model:ir.ui.menu,name:leap_catering_management.menu_catering_customer
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.view_catering_order_search
+msgid "Customer"
+msgstr "العميل"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,help:leap_catering_management.field_catering_order__access_url
+msgid "Customer Portal URL"
+msgstr "رابط بوابة العميل"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__rating_value
+msgid "Customer Rating"
+msgstr "تقييم العميل"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__rating_feedback
+msgid "Customer Review"
+msgstr "مراجعة العميل"
+
+#. module: leap_catering_management
+#: model:ir.actions.act_window,name:leap_catering_management.action_catering_customer
+msgid "Customers"
+msgstr "العملاء"
+
+#. module: leap_catering_management
+#: model:ir.ui.menu,name:leap_catering_management.menu_catering_dashboard
+msgid "Dashboard"
+msgstr "لوحة المعلومات"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_history_wizard__date_from
+msgid "Date From"
+msgstr "من تاريخ"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_history_wizard__date_to
+msgid "Date To"
+msgstr "إلى تاريخ"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_service_charge__price
+msgid "Default Price"
+msgstr "السعر الافتراضي"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_food_item__description
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_meal_package__description
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_charge_line__name
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_product__description
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_service_charge__description
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.portal_catering_order_page
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.report_catering_order_document
+msgid "Description"
+msgstr "الوصف"
+
+#. module: leap_catering_management
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.view_catering_food_item_form
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.view_catering_meal_package_form
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.view_catering_product_form
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.view_catering_service_charge_form
+msgid "Description..."
+msgstr "الوصف..."
+
+#. module: leap_catering_management
+#: model:ir.model.fields.selection,name:leap_catering_management.selection__catering_meal_package__meal_type__dinner
+msgid "Dinner"
+msgstr "العشاء"
+
+#. module: leap_catering_management
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.view_catering_order_cancel_wizard_form
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.view_catering_order_history_wizard_form
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.view_catering_order_tag_wizard_form
+msgid "Discard"
+msgstr "تجاهل"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_checklist_template__display_name
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_checklist_template_line__display_name
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_event_category__display_name
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_food_item__display_name
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_food_photo__display_name
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_food_type__display_name
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_meal_package__display_name
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_meal_package_line__display_name
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_meal_package_price_tier__display_name
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__display_name
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_cancel_wizard__display_name
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_charge_line__display_name
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_checklist_item__display_name
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_history_wizard__display_name
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_package_line__display_name
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_tag__display_name
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_tag_wizard__display_name
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_product__display_name
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_service_charge__display_name
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_terms_template__display_name
+#: model:ir.model.fields,field_description:leap_catering_management.field_crm_lead__display_name
+#: model:ir.model.fields,field_description:leap_catering_management.field_hr_employee__display_name
+msgid "Display Name"
+msgstr "الاسم المعروض"
+
+#. module: leap_catering_management
+#. odoo-python
+#: code:addons/leap_catering_management/controllers/portal.py:0
+#: model:ir.model.fields.selection,name:leap_catering_management.selection__catering_order__state__done
+#: model:ir.model.fields.selection,name:leap_catering_management.selection__catering_order_checklist_item__state__done
+msgid "Done"
+msgstr "منجز"
+
+#. module: leap_catering_management
+#. odoo-python
+#: code:addons/leap_catering_management/controllers/portal.py:0
+#: model:ir.model.fields.selection,name:leap_catering_management.selection__catering_order__state__draft
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.view_catering_order_search
+msgid "Draft"
+msgstr "مسودة"
+
+#. module: leap_catering_management
+#: model:ir.model,name:leap_catering_management.model_hr_employee
+msgid "Employee"
+msgstr "الموظف"
+
+#. module: leap_catering_management
+#. odoo-python
+#: code:addons/leap_catering_management/controllers/portal.py:0
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__event_date
+#: model:ir.model.fields,field_description:leap_catering_management.field_crm_lead__catering_event_date
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.portal_my_catering_orders
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.view_catering_order_search
+msgid "Event Date"
+msgstr "تاريخ الفعالية"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__event_category_id
+#: model:ir.model.fields,field_description:leap_catering_management.field_crm_lead__catering_event_category_id
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.view_catering_order_search
+msgid "Event Type"
+msgstr "نوع الفعالية"
+
+#. module: leap_catering_management
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.report_catering_order_document
+msgid "Event Type:"
+msgstr "نوع الفعالية:"
+
+#. module: leap_catering_management
+#: model:ir.actions.act_window,name:leap_catering_management.action_catering_event_category
+#: model:ir.ui.menu,name:leap_catering_management.menu_catering_event_category
+msgid "Event Types"
+msgstr "أنواع الفعاليات"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__message_follower_ids
+msgid "Followers"
+msgstr "المتابعون"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "المتابعون (الشركاء)"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,help:leap_catering_management.field_catering_order__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr "أيقونة Font Awesome، مثال fa-tasks"
+
+#. module: leap_catering_management
+#: model:ir.ui.menu,name:leap_catering_management.menu_catering_food
+msgid "Food"
+msgstr "الطعام"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_meal_package_line__food_item_id
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.report_catering_meal_package_document
+msgid "Food Item"
+msgstr "صنف الطعام"
+
+#. module: leap_catering_management
+#: model:ir.actions.act_window,name:leap_catering_management.action_catering_food_item
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_meal_package__line_ids
+#: model:ir.ui.menu,name:leap_catering_management.menu_catering_food_item
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.view_catering_meal_package_form
+msgid "Food Items"
+msgstr "أصناف الطعام"
+
+#. module: leap_catering_management
+#: model:ir.actions.act_window,name:leap_catering_management.action_catering_food_photo
+#: model:ir.ui.menu,name:leap_catering_management.menu_catering_food_photo
+msgid "Food Photo Gallery"
+msgstr "معرض صور الطعام"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_meal_package__photo_ids
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__photo_ids
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.view_catering_meal_package_form
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.view_catering_order_form
+msgid "Food Photos"
+msgstr "صور الطعام"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_food_item__food_type_id
+msgid "Food Type"
+msgstr "نوع الطعام"
+
+#. module: leap_catering_management
+#: model:ir.actions.act_window,name:leap_catering_management.action_catering_food_type
+#: model:ir.ui.menu,name:leap_catering_management.menu_catering_food_type
+msgid "Food Types"
+msgstr "أنواع الطعام"
+
+#. module: leap_catering_management
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.view_catering_food_item_form
+msgid "Food item name"
+msgstr "اسم صنف الطعام"
+
+#. module: leap_catering_management
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.view_crm_lead_form_catering
+msgid "Generate Catering Order"
+msgstr "إنشاء طلب تقديم طعام"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__guest_count
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_package_line__guest_count
+#: model:ir.model.fields,field_description:leap_catering_management.field_crm_lead__catering_guest_count
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.portal_my_catering_orders
+msgid "Guests"
+msgstr "الضيوف"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__has_message
+msgid "Has Message"
+msgstr "لديه رسالة"
+
+#. module: leap_catering_management
+#. odoo-python
+#: code:addons/leap_catering_management/models/catering_order.py:0
+msgid "Hello %(partner)s,"
+msgstr "مرحبًا %(partner)s،"
+
+#. module: leap_catering_management
+#. odoo-python
+#: code:addons/leap_catering_management/models/catering_order.py:0
+msgid "How was your catering experience?"
+msgstr "كيف كانت تجربتك مع خدمة تقديم الطعام؟"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_checklist_template__id
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_checklist_template_line__id
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_event_category__id
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_food_item__id
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_food_photo__id
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_food_type__id
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_meal_package__id
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_meal_package_line__id
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_meal_package_price_tier__id
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__id
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_cancel_wizard__id
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_charge_line__id
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_checklist_item__id
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_history_wizard__id
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_package_line__id
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_tag__id
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_tag_wizard__id
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_product__id
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_service_charge__id
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_terms_template__id
+#: model:ir.model.fields,field_description:leap_catering_management.field_crm_lead__id
+#: model:ir.model.fields,field_description:leap_catering_management.field_hr_employee__id
+msgid "ID"
+msgstr "المعرف"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__activity_exception_icon
+msgid "Icon"
+msgstr "الأيقونة"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,help:leap_catering_management.field_catering_order__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr "أيقونة للإشارة إلى نشاط استثنائي."
+
+#. module: leap_catering_management
+#: model:ir.model.fields,help:leap_catering_management.field_catering_order__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "إذا تم التحديد، فإن الرسائل الجديدة تتطلب انتباهك."
+
+#. module: leap_catering_management
+#: model:ir.model.fields,help:leap_catering_management.field_catering_order__message_has_error
+#: model:ir.model.fields,help:leap_catering_management.field_catering_order__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr "إذا تم التحديد، فإن بعض الرسائل بها خطأ في التسليم."
+
+#. module: leap_catering_management
+#: model:ir.model.fields,help:leap_catering_management.field_hr_employee__is_catering_staff
+msgid "If checked, this employee can be assigned to catering orders."
+msgstr "إذا تم التحديد، يمكن تعيين هذا الموظف لطلبات تقديم الطعام."
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_food_item__image
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_food_photo__image
+msgid "Image"
+msgstr "الصورة"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__invoice_id
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.view_catering_order_form
+msgid "Invoice"
+msgstr "فاتورة"
+
+#. module: leap_catering_management
+#. odoo-python
+#: code:addons/leap_catering_management/controllers/portal.py:0
+#: model:ir.model.fields.selection,name:leap_catering_management.selection__catering_order__state__invoiced
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.view_catering_order_search
+msgid "Invoiced"
+msgstr "تم إصدار الفاتورة"
+
+#. module: leap_catering_management
+#: model:ir.ui.menu,name:leap_catering_management.menu_catering_invoice
+msgid "Invoices"
+msgstr "الفواتير"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__invoice_policy
+msgid "Invoicing"
+msgstr "إصدار الفواتير"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__message_is_follower
+msgid "Is Follower"
+msgstr "متابع"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_checklist_template__write_uid
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_checklist_template_line__write_uid
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_event_category__write_uid
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_food_item__write_uid
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_food_photo__write_uid
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_food_type__write_uid
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_meal_package__write_uid
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_meal_package_line__write_uid
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_meal_package_price_tier__write_uid
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__write_uid
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_cancel_wizard__write_uid
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_charge_line__write_uid
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_checklist_item__write_uid
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_history_wizard__write_uid
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_package_line__write_uid
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_tag__write_uid
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_tag_wizard__write_uid
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_product__write_uid
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_service_charge__write_uid
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_terms_template__write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_checklist_template__write_date
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_checklist_template_line__write_date
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_event_category__write_date
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_food_item__write_date
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_food_photo__write_date
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_food_type__write_date
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_meal_package__write_date
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_meal_package_line__write_date
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_meal_package_price_tier__write_date
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__write_date
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_cancel_wizard__write_date
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_charge_line__write_date
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_checklist_item__write_date
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_history_wizard__write_date
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_package_line__write_date
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_tag__write_date
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_tag_wizard__write_date
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_product__write_date
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_service_charge__write_date
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_terms_template__write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: leap_catering_management
+#: model:ir.model,name:leap_catering_management.model_crm_lead
+msgid "Lead"
+msgstr "العميل المحتمل"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,help:leap_catering_management.field_catering_meal_package_price_tier__max_guests
+msgid "Leave empty for no upper limit."
+msgstr "اتركه فارغًا لعدم وجود حد أعلى."
+
+#. module: leap_catering_management
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.view_catering_order_form
+msgid "Load Checklist"
+msgstr "تحميل قائمة المراجعة"
+
+#. module: leap_catering_management
+#: model:ir.model.fields.selection,name:leap_catering_management.selection__catering_meal_package__meal_type__lunch
+msgid "Lunch"
+msgstr "الغداء"
+
+#. module: leap_catering_management
+#: model:res.groups,name:leap_catering_management.group_catering_manager
+msgid "Manager"
+msgstr "مدير"
+
+#. module: leap_catering_management
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.view_catering_order_form
+msgid "Mark Done"
+msgstr "وضع علامة منجز"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_meal_package_price_tier__max_guests
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.report_catering_meal_package_document
+msgid "Max Guests"
+msgstr "الحد الأقصى للضيوف"
+
+#. module: leap_catering_management
+#: model:ir.actions.report,name:leap_catering_management.action_report_catering_meal_package
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_package_line__package_id
+#: model:ir.ui.menu,name:leap_catering_management.menu_catering_meal_package
+msgid "Meal Package"
+msgstr "باقة الوجبات"
+
+#. module: leap_catering_management
+#: model:ir.actions.act_window,name:leap_catering_management.action_catering_meal_package
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__package_line_ids
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.view_catering_order_form
+msgid "Meal Packages"
+msgstr "باقات الوجبات"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_meal_package__meal_type
+msgid "Meal Type"
+msgstr "نوع الوجبة"
+
+#. module: leap_catering_management
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.view_catering_meal_package_form
+msgid "Menu"
+msgstr "القائمة"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_meal_package__menu_pdf
+msgid "Menu PDF"
+msgstr "ملف PDF للقائمة"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_meal_package__menu_pdf_filename
+msgid "Menu Pdf Filename"
+msgstr "اسم ملف PDF للقائمة"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__message_has_error
+msgid "Message Delivery error"
+msgstr "خطأ في تسليم الرسالة"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__message_ids
+msgid "Messages"
+msgstr "الرسائل"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_meal_package_price_tier__min_guests
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.report_catering_meal_package_document
+msgid "Min Guests"
+msgstr "الحد الأدنى للضيوف"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr "الموعد النهائي لنشاطي"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_checklist_template__name
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_checklist_template_line__name
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_event_category__name
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_food_item__name
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_food_photo__name
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_food_type__name
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_meal_package__name
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__name
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_checklist_item__name
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_tag__name
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_product__name
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_service_charge__name
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_terms_template__name
+msgid "Name"
+msgstr "الاسم"
+
+#. module: leap_catering_management
+#. odoo-python
+#: code:addons/leap_catering_management/models/catering_order.py:0
+msgid "New"
+msgstr "جديد"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__activity_calendar_event_id
+msgid "Next Activity Calendar Event"
+msgstr "حدث التقويم للنشاط التالي"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr "الموعد النهائي للنشاط التالي"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__activity_summary
+msgid "Next Activity Summary"
+msgstr "ملخص النشاط التالي"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__activity_type_id
+msgid "Next Activity Type"
+msgstr "نوع النشاط التالي"
+
+#. module: leap_catering_management
+#. odoo-python
+#: code:addons/leap_catering_management/wizards/catering_order_history_wizard.py:0
+msgid "No orders found for the selected criteria."
+msgstr "لم يتم العثور على طلبات بالمعايير المحددة."
+
+#. module: leap_catering_management
+#. odoo-python
+#: code:addons/leap_catering_management/wizards/catering_order_tag_wizard.py:0
+msgid "No orders selected."
+msgstr "لم يتم تحديد أي طلبات."
+
+#. module: leap_catering_management
+#. odoo-python
+#: code:addons/leap_catering_management/wizards/catering_order_cancel_wizard.py:0
+msgid "None of the selected orders are in draft state."
+msgstr "لا يوجد أي من الطلبات المحددة في حالة المسودة."
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_meal_package_line__note
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.report_catering_meal_package_document
+msgid "Note"
+msgstr "ملاحظة"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__message_needaction_counter
+msgid "Number of Actions"
+msgstr "عدد الإجراءات"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__message_has_error_counter
+msgid "Number of errors"
+msgstr "عدد الأخطاء"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,help:leap_catering_management.field_catering_order__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr "عدد الرسائل التي تتطلب إجراء"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,help:leap_catering_management.field_catering_order__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "عدد الرسائل التي بها خطأ في التسليم"
+
+#. module: leap_catering_management
+#. odoo-python
+#: code:addons/leap_catering_management/models/catering_order.py:0
+msgid "Only cancelled orders can be reset to draft."
+msgstr "يمكن فقط إعادة تعيين الطلبات الملغاة إلى مسودة."
+
+#. module: leap_catering_management
+#. odoo-python
+#: code:addons/leap_catering_management/models/catering_order.py:0
+msgid "Only confirmed or invoiced orders can be marked as done."
+msgstr "يمكن فقط وضع علامة منجز على الطلبات المؤكدة أو التي صدرت لها فاتورة."
+
+#. module: leap_catering_management
+#. odoo-python
+#: code:addons/leap_catering_management/models/catering_order.py:0
+msgid "Only confirmed orders can be invoiced."
+msgstr "يمكن فقط إصدار فاتورة للطلبات المؤكدة."
+
+#. module: leap_catering_management
+#. odoo-python
+#: code:addons/leap_catering_management/models/catering_order.py:0
+msgid "Only draft orders can be confirmed."
+msgstr "يمكن فقط تأكيد الطلبات التي في حالة المسودة."
+
+#. module: leap_catering_management
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.view_catering_order_cancel_wizard_form
+msgid ""
+"Only the selected orders that are still in <strong>Draft</strong> will be "
+"cancelled."
+msgstr ""
+"سيتم إلغاء الطلبات المحددة التي لا تزال في حالة <strong>مسودة</strong> فقط."
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_charge_line__order_id
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_checklist_item__order_id
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_package_line__order_id
+msgid "Order"
+msgstr "الطلب"
+
+#. module: leap_catering_management
+#: model:ir.actions.act_window,name:leap_catering_management.action_catering_order_analysis
+msgid "Order Analysis"
+msgstr "تحليل الطلبات"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__attachment_count
+msgid "Order Attachment Count"
+msgstr "عدد مرفقات الطلب"
+
+#. module: leap_catering_management
+#: model:ir.actions.act_window,name:leap_catering_management.action_catering_order_tag
+#: model:ir.ui.menu,name:leap_catering_management.menu_catering_order_tag
+msgid "Order Tags"
+msgstr "وسوم الطلبات"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_cancel_wizard__order_ids
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_tag_wizard__order_ids
+#: model:ir.ui.menu,name:leap_catering_management.menu_catering_order
+msgid "Orders"
+msgstr "الطلبات"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_meal_package_line__package_id
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_meal_package_price_tier__package_id
+msgid "Package"
+msgstr "الباقة"
+
+#. module: leap_catering_management
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.view_catering_meal_package_form
+msgid "Package name"
+msgstr "اسم الباقة"
+
+#. module: leap_catering_management
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.report_catering_order_document
+msgid "Packages"
+msgstr "الباقات"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__amount_packages
+msgid "Packages Total"
+msgstr "إجمالي الباقات"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__invoice_status
+msgid "Payment Status"
+msgstr "حالة الدفع"
+
+#. module: leap_catering_management
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.view_catering_food_photo_kanban
+msgid "Photo"
+msgstr "الصورة"
+
+#. module: leap_catering_management
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.view_catering_food_photo_form
+msgid "Photo name"
+msgstr "اسم الصورة"
+
+#. module: leap_catering_management
+#. odoo-python
+#: code:addons/leap_catering_management/models/catering_order.py:0
+msgid "Please configure an income account before creating an invoice."
+msgstr "يرجى تهيئة حساب إيرادات قبل إنشاء فاتورة."
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__access_url
+msgid "Portal Access URL"
+msgstr "رابط الوصول إلى البوابة"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_package_line__unit_price
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.report_catering_meal_package_document
+msgid "Price / Head"
+msgstr "السعر / للفرد"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_meal_package_price_tier__price_per_head
+msgid "Price Per Head"
+msgstr "السعر لكل فرد"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_meal_package__price_tier_ids
+msgid "Price Tiers"
+msgstr "شرائح الأسعار"
+
+#. module: leap_catering_management
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.report_catering_meal_package_document
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.view_catering_meal_package_form
+msgid "Price per Head"
+msgstr "السعر لكل فرد"
+
+#. module: leap_catering_management
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.view_catering_meal_package_form
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.view_catering_order_form
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.view_catering_order_history_wizard_form
+msgid "Print"
+msgstr "طباعة"
+
+#. module: leap_catering_management
+#: model:ir.model,name:leap_catering_management.model_catering_order_history_wizard
+msgid "Print Catering Order History"
+msgstr "طباعة سجل طلبات تقديم الطعام"
+
+#. module: leap_catering_management
+#: model:ir.actions.act_window,name:leap_catering_management.action_catering_order_history_wizard
+#: model:ir.ui.menu,name:leap_catering_management.menu_catering_order_history
+msgid "Print Order History"
+msgstr "طباعة سجل الطلبات"
+
+#. module: leap_catering_management
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.view_catering_product_form
+msgid "Product name"
+msgstr "اسم المنتج"
+
+#. module: leap_catering_management
+#: model:ir.actions.act_window,name:leap_catering_management.action_catering_product
+#: model:ir.ui.menu,name:leap_catering_management.menu_catering_product
+msgid "Products"
+msgstr "المنتجات"
+
+#. module: leap_catering_management
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.portal_catering_order_page
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.report_catering_order_document
+msgid "Qty"
+msgstr "الكمية"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_charge_line__quantity
+msgid "Quantity"
+msgstr "الكمية"
+
+#. module: leap_catering_management
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.portal_catering_order_page
+msgid "Rate Your Experience"
+msgstr "قيّم تجربتك"
+
+#. module: leap_catering_management
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.view_catering_order_form
+msgid "Rating"
+msgstr "التقييم"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__rating_requested_on
+msgid "Rating Requested On"
+msgstr "طلب التقييم في"
+
+#. module: leap_catering_management
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.view_catering_order_cancel_wizard_form
+msgid "Reason for cancellation..."
+msgstr "سبب الإلغاء..."
+
+#. module: leap_catering_management
+#. odoo-python
+#: code:addons/leap_catering_management/controllers/portal.py:0
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.portal_my_catering_orders
+msgid "Reference"
+msgstr "المرجع"
+
+#. module: leap_catering_management
+#: model:ir.ui.menu,name:leap_catering_management.menu_catering_reporting
+msgid "Reporting"
+msgstr "التقارير"
+
+#. module: leap_catering_management
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.view_catering_order_form
+msgid "Request Rating"
+msgstr "طلب تقييم"
+
+#. module: leap_catering_management
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.view_catering_order_form
+msgid "Reset to Draft"
+msgstr "إعادة تعيين إلى مسودة"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__activity_user_id
+msgid "Responsible User"
+msgstr "المستخدم المسؤول"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "خطأ في تسليم الرسالة النصية"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_product__price
+msgid "Sales Price"
+msgstr "سعر البيع"
+
+#. module: leap_catering_management
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.portal_catering_order_page
+msgid "Score:"
+msgstr "النتيجة:"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__access_token
+msgid "Security Token"
+msgstr "رمز الأمان"
+
+#. module: leap_catering_management
+#. odoo-python
+#: code:addons/leap_catering_management/models/catering_order.py:0
+msgid "Select a checklist template first."
+msgstr "اختر قالب قائمة مراجعة أولاً."
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_checklist_template_line__sequence
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_food_type__sequence
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_meal_package_line__sequence
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_checklist_item__sequence
+msgid "Sequence"
+msgstr "التسلسل"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_charge_line__service_charge_id
+msgid "Service Charge"
+msgstr "رسم الخدمة"
+
+#. module: leap_catering_management
+#. odoo-python
+#: code:addons/leap_catering_management/models/crm_lead.py:0
+msgid "Set a customer on the lead before generating a catering order."
+msgstr "حدد عميلاً للعميل المحتمل قبل إنشاء طلب تقديم طعام."
+
+#. module: leap_catering_management
+#: model:ir.model.fields.selection,name:leap_catering_management.selection__catering_order__invoice_policy__single
+msgid "Single invoice line"
+msgstr "بند فاتورة واحد"
+
+#. module: leap_catering_management
+#: model:ir.model.fields.selection,name:leap_catering_management.selection__catering_meal_package__meal_type__snack
+msgid "Snack / Cocktail"
+msgstr "وجبة خفيفة / كوكتيل"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__opportunity_id
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.view_catering_order_form
+msgid "Source Lead"
+msgstr "العميل المحتمل المصدر"
+
+#. module: leap_catering_management
+#: model:ir.model.fields.selection,name:leap_catering_management.selection__catering_order__invoice_policy__split
+msgid "Split by package / charge"
+msgstr "تقسيم حسب الباقة / الرسم"
+
+#. module: leap_catering_management
+#: model:ir.ui.menu,name:leap_catering_management.menu_catering_staff
+msgid "Staff"
+msgstr "الطاقم"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__state
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_checklist_item__state
+msgid "State"
+msgstr "الحالة"
+
+#. module: leap_catering_management
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.portal_my_catering_orders
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.view_catering_order_search
+msgid "Status"
+msgstr "الحالة"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,help:leap_catering_management.field_catering_order__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+"الحالة بناءً على الأنشطة\n"
+"متأخر: تاريخ الاستحقاق قد مضى بالفعل\n"
+"اليوم: تاريخ النشاط هو اليوم\n"
+"مخطط: أنشطة مستقبلية."
+
+#. module: leap_catering_management
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.portal_catering_order_page
+msgid "Submit Rating"
+msgstr "إرسال التقييم"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_charge_line__price_subtotal
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_package_line__price_subtotal
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.portal_catering_order_page
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.report_catering_order_document
+msgid "Subtotal"
+msgstr "الإجمالي الفرعي"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__tag_ids
+msgid "Tags"
+msgstr "الوسوم"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_tag_wizard__tag_ids
+msgid "Tags to Add"
+msgstr "الوسوم المراد إضافتها"
+
+#. module: leap_catering_management
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.portal_catering_order_page
+msgid "Tell us about your experience (optional)"
+msgstr "أخبرنا عن تجربتك (اختياري)"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_checklist_template_line__template_id
+msgid "Template"
+msgstr "القالب"
+
+#. module: leap_catering_management
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.view_catering_terms_template_form
+msgid "Template name"
+msgstr "اسم القالب"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__notes
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.view_catering_order_form
+msgid "Terms & Conditions"
+msgstr "الشروط والأحكام"
+
+#. module: leap_catering_management
+#: model:ir.actions.act_window,name:leap_catering_management.action_catering_terms_template
+#: model:ir.ui.menu,name:leap_catering_management.menu_catering_terms_template
+msgid "Terms & Conditions Templates"
+msgstr "قوالب الشروط والأحكام"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__terms_template_id
+msgid "Terms Template"
+msgstr "قالب الشروط"
+
+#. module: leap_catering_management
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.view_catering_order_form
+msgid "Terms and conditions for this order..."
+msgstr "الشروط والأحكام لهذا الطلب..."
+
+#. module: leap_catering_management
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.view_catering_terms_template_form
+msgid "Terms and conditions text..."
+msgstr "نص الشروط والأحكام..."
+
+#. module: leap_catering_management
+#. odoo-python
+#: code:addons/leap_catering_management/models/catering_order.py:0
+msgid "The customer has no email address on file."
+msgstr "لا يوجد عنوان بريد إلكتروني مسجل للعميل."
+
+#. module: leap_catering_management
+#. odoo-python
+#: code:addons/leap_catering_management/wizards/catering_order_history_wizard.py:0
+msgid "The start date must be before the end date."
+msgstr "يجب أن يكون تاريخ البدء قبل تاريخ الانتهاء."
+
+#. module: leap_catering_management
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.portal_my_catering_orders
+msgid "There are no catering orders."
+msgstr "لا توجد طلبات تقديم طعام."
+
+#. module: leap_catering_management
+#: model:ir.model.constraint,message:leap_catering_management.constraint_catering_event_category_name_uniq
+msgid "This event category already exists."
+msgstr "فئة الفعالية هذه موجودة بالفعل."
+
+#. module: leap_catering_management
+#: model:ir.model.constraint,message:leap_catering_management.constraint_catering_food_type_name_uniq
+msgid "This food type already exists."
+msgstr "نوع الطعام هذا موجود بالفعل."
+
+#. module: leap_catering_management
+#. odoo-python
+#: code:addons/leap_catering_management/models/catering_order.py:0
+msgid "This order has already been invoiced."
+msgstr "تم بالفعل إصدار فاتورة لهذا الطلب."
+
+#. module: leap_catering_management
+#: model:ir.model.constraint,message:leap_catering_management.constraint_catering_order_tag_name_uniq
+msgid "This tag already exists."
+msgstr "هذا الوسم موجود بالفعل."
+
+#. module: leap_catering_management
+#: model:ir.model.fields.selection,name:leap_catering_management.selection__catering_order_checklist_item__state__todo
+msgid "To Do"
+msgstr "للقيام به"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__amount_total
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.portal_catering_order_page
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.portal_my_catering_orders
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.report_catering_order_document
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.view_catering_order_form
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.view_catering_order_list
+msgid "Total"
+msgstr "الإجمالي"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,help:leap_catering_management.field_catering_order__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr "نوع نشاط الاستثناء المسجل."
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order_charge_line__unit_price
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.portal_catering_order_page
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.report_catering_order_document
+msgid "Unit Price"
+msgstr "سعر الوحدة"
+
+#. module: leap_catering_management
+#: model:ir.actions.act_window,name:leap_catering_management.action_catering_order_tag_wizard
+msgid "Update Tags"
+msgstr "تحديث الوسوم"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_food_photo__order_ids
+msgid "Used in Orders"
+msgstr "مستخدمة في الطلبات"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_food_photo__package_ids
+msgid "Used in Packages"
+msgstr "مستخدمة في الباقات"
+
+#. module: leap_catering_management
+#: model:res.groups,name:leap_catering_management.group_catering_user
+msgid "User"
+msgstr "المستخدم"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__venue
+#: model:ir.model.fields,field_description:leap_catering_management.field_crm_lead__catering_venue
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.portal_my_catering_orders
+msgid "Venue"
+msgstr "المكان"
+
+#. module: leap_catering_management
+#. odoo-python
+#: code:addons/leap_catering_management/models/catering_order.py:0
+msgid ""
+"We hope you enjoyed your event! We would love to hear your feedback on "
+"%(order)s."
+msgstr "نأمل أن تكون قد استمتعت بفعاليتك! يسعدنا سماع رأيك حول %(order)s."
+
+#. module: leap_catering_management
+#: model:ir.model.fields,field_description:leap_catering_management.field_catering_order__website_message_ids
+msgid "Website Messages"
+msgstr "رسائل الموقع"
+
+#. module: leap_catering_management
+#: model:ir.model.fields,help:leap_catering_management.field_catering_order__website_message_ids
+msgid "Website communication history"
+msgstr "سجل تواصل الموقع"
+
+#. module: leap_catering_management
+#. odoo-python
+#: code:addons/leap_catering_management/models/catering_order.py:0
+msgid "You can only request a rating once the order is done."
+msgstr "لا يمكن طلب تقييم إلا بعد إنجاز الطلب."
+
+#. module: leap_catering_management
+#. odoo-python
+#: code:addons/leap_catering_management/models/catering_order.py:0
+msgid "You cannot cancel an already invoiced order."
+msgstr "لا يمكنك إلغاء طلب تم إصدار فاتورة له بالفعل."
+
+#. module: leap_catering_management
+#: model_terms:ir.ui.view,arch_db:leap_catering_management.portal_catering_order_page
+msgid "Your Rating"
+msgstr "تقييمك"
+
+#. module: leap_catering_management
+#. odoo-python
+#: code:addons/leap_catering_management/models/catering_order.py:0
+msgid "res_id"
+msgstr ""
+
+#. module: leap_catering_management
+#. odoo-python
+#: code:addons/leap_catering_management/models/catering_order.py:0
+msgid "res_model"
+msgstr ""
+
+#. module: leap_catering_management
+#. odoo-python
+#: code:addons/leap_catering_management/controllers/portal.py:0
+msgid "state"
+msgstr ""

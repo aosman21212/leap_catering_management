@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+
+    <!-- Food types -->
+    <record id="demo_food_type_starter" model="catering.food.type">
+        <field name="name">Starter</field>
+        <field name="sequence">10</field>
+    </record>
+    <record id="demo_food_type_main" model="catering.food.type">
+        <field name="name">Main Course</field>
+        <field name="sequence">20</field>
+    </record>
+    <record id="demo_food_type_dessert" model="catering.food.type">
+        <field name="name">Dessert</field>
+        <field name="sequence">30</field>
+    </record>
+
+    <!-- Food items -->
+    <record id="demo_food_item_soup" model="catering.food.item">
+        <field name="name">Cream of Mushroom Soup</field>
+        <field name="food_type_id" ref="demo_food_type_starter"/>
+    </record>
+    <record id="demo_food_item_salad" model="catering.food.item">
+        <field name="name">Garden Salad</field>
+        <field name="food_type_id" ref="demo_food_type_starter"/>
+    </record>
+    <record id="demo_food_item_chicken" model="catering.food.item">
+        <field name="name">Grilled Chicken Breast</field>
+        <field name="food_type_id" ref="demo_food_type_main"/>
+    </record>
+    <record id="demo_food_item_pasta" model="catering.food.item">
+        <field name="name">Vegetable Pasta</field>
+        <field name="food_type_id" ref="demo_food_type_main"/>
+    </record>
+    <record id="demo_food_item_cake" model="catering.food.item">
+        <field name="name">Chocolate Cake</field>
+        <field name="food_type_id" ref="demo_food_type_dessert"/>
+    </record>
+
+    <!-- Event categories -->
+    <record id="demo_event_category_wedding" model="catering.event.category">
+        <field name="name">Wedding</field>
+    </record>
+    <record id="demo_event_category_birthday" model="catering.event.category">
+        <field name="name">Birthday</field>
+    </record>
+    <record id="demo_event_category_corporate" model="catering.event.category">
+        <field name="name">Corporate Event</field>
+    </record>
+
+    <!-- Additional service charges -->
+    <record id="demo_service_charge_transport" model="catering.service.charge">
+        <field name="name">Transportation</field>
+        <field name="price">100.0</field>
+    </record>
+    <record id="demo_service_charge_cleaning" model="catering.service.charge">
+        <field name="name">Cleaning</field>
+        <field name="price">50.0</field>
+    </record>
+
+    <!-- Meal package -->
+    <record id="demo_meal_package_classic" model="catering.meal.package">
+        <field name="name">Classic Buffet</field>
+        <field name="description">A classic buffet package with starter, main course and dessert.</field>
+    </record>
+    <record id="demo_meal_package_classic_line_1" model="catering.meal.package.line">
+        <field name="package_id" ref="demo_meal_package_classic"/>
+        <field name="food_type_id" ref="demo_food_type_starter"/>
+        <field name="food_item_id" ref="demo_food_item_soup"/>
+        <field name="sequence">10</field>
+    </record>
+    <record id="demo_meal_package_classic_line_2" model="catering.meal.package.line">
+        <field name="package_id" ref="demo_meal_package_classic"/>
+        <field name="food_type_id" ref="demo_food_type_main"/>
+        <field name="food_item_id" ref="demo_food_item_chicken"/>
+        <field name="sequence">20</field>
+    </record>
+    <record id="demo_meal_package_classic_line_3" model="catering.meal.package.line">
+        <field name="package_id" ref="demo_meal_package_classic"/>
+        <field name="food_type_id" ref="demo_food_type_dessert"/>
+        <field name="food_item_id" ref="demo_food_item_cake"/>
+        <field name="sequence">30</field>
+    </record>
+    <record id="demo_meal_package_classic_tier_1" model="catering.meal.package.price.tier">
+        <field name="package_id" ref="demo_meal_package_classic"/>
+        <field name="min_guests">1</field>
+        <field name="max_guests">50</field>
+        <field name="price_per_head">25.0</field>
+    </record>
+    <record id="demo_meal_package_classic_tier_2" model="catering.meal.package.price.tier">
+        <field name="package_id" ref="demo_meal_package_classic"/>
+        <field name="min_guests">51</field>
+        <field name="max_guests">150</field>
+        <field name="price_per_head">22.0</field>
+    </record>
+    <record id="demo_meal_package_classic_tier_3" model="catering.meal.package.price.tier">
+        <field name="package_id" ref="demo_meal_package_classic"/>
+        <field name="min_guests">151</field>
+        <field name="max_guests">0</field>
+        <field name="price_per_head">20.0</field>
+    </record>
+
+    <!-- Catering staff -->
+    <record id="demo_employee_staff_1" model="hr.employee">
+        <field name="name">Sara Martinez</field>
+        <field name="is_catering_staff" eval="True"/>
+    </record>
+    <record id="demo_employee_staff_2" model="hr.employee">
+        <field name="name">Noah Dubois</field>
+        <field name="is_catering_staff" eval="True"/>
+    </record>
+
+    <!-- Demo customer -->
+    <record id="demo_partner_customer" model="res.partner">
+        <field name="name">Thompson Wedding Events</field>
+        <field name="is_company">True</field>
+        <field name="email">contact@thompsonweddings.example.com</field>
+    </record>
+
+    <!-- Demo catering order -->
+    <record id="demo_catering_order_1" model="catering.order">
+        <field name="partner_id" ref="demo_partner_customer"/>
+        <field name="event_category_id" ref="demo_event_category_wedding"/>
+        <field name="event_date" eval="(datetime.now() + timedelta(days=30)).strftime('%Y-%m-%d 18:00:00')"/>
+        <field name="venue">Riverside Garden Hall</field>
+        <field name="guest_count">80</field>
+        <field name="staff_ids" eval="[(6, 0, [ref('demo_employee_staff_1'), ref('demo_employee_staff_2')])]"/>
+    </record>
+    <record id="demo_catering_order_1_package_line" model="catering.order.package.line">
+        <field name="order_id" ref="demo_catering_order_1"/>
+        <field name="package_id" ref="demo_meal_package_classic"/>
+        <field name="guest_count">80</field>
+        <field name="unit_price">22.0</field>
+    </record>
+    <record id="demo_catering_order_1_charge_line" model="catering.order.charge.line">
+        <field name="order_id" ref="demo_catering_order_1"/>
+        <field name="service_charge_id" ref="demo_service_charge_transport"/>
+        <field name="name">Transportation</field>
+        <field name="quantity">1</field>
+        <field name="unit_price">100.0</field>
+    </record>
+
+</odoo>
