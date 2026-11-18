@@ -12,7 +12,7 @@ Manage your catering business end to end:
 * Generate single or split customer invoices from an order.
 """,
     'category': 'Industries',
-    'version': '19.0.1.0.2',
+    'version': '19.0.1.0.3',
     'license': 'LGPL-3',
     'author': "LeapAI",
     'images': [
